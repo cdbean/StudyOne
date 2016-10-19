@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proceedings.aux
+The style file: SIGCHI-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: sigproc.bib
+I was expecting an "="---line 211 of file sigproc.bib
+ :  Publication 
+ :              Number={TR-001-093003-016}
+I'm skipping whatever remains of this entry
+Repeated entry---line 213 of file sigproc.bib
+ : @inproceedings{Neale2004
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "?"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in Asch1951
+Warning--empty publisher in Chin2009
+Warning--empty address in Chin2009
+Warning--empty publisher in Goyal2016
+Warning--empty address in Goyal2016
+Warning--page numbers missing in both pages and numpages fields in Goyal2016
+Warning--empty publisher in Goyal2014
+Warning--empty address in Goyal2014
+Warning--empty publisher in Goyal2013
+Warning--empty address in Goyal2013
+Warning--empty publisher in grudin2010
+Warning--empty address in grudin2010
+Warning--empty address in heuer1999
+Warning--empty address in Kang2011
+Warning--empty publisher in Neale2004
+Warning--empty address in Neale2004
+Warning--empty publisher in Nobarany2012
+Warning--empty address in Nobarany2012
+Warning--no number and no volume in Scholtz2014
+Warning--empty address in Stahl2006
+Warning--empty publisher in zheng2015
+Warning--empty address in zheng2015
+You've used 24 entries,
+            5283 wiz_defined-function locations,
+            1425 strings with 20723 characters,
+and the built_in function-call counts, 27098 in all, are:
+= -- 3742
+> -- 769
+< -- 0
++ -- 237
+- -- 517
+* -- 1782
+:= -- 2671
+add.period$ -- 121
+call.type$ -- 24
+change.case$ -- 170
+chr.to.int$ -- 24
+cite$ -- 46
+duplicate$ -- 2084
+empty$ -- 1460
+format.name$ -- 324
+if$ -- 6519
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 103
+newline$ -- 241
+num.names$ -- 144
+pop$ -- 827
+preamble$ -- 1
+purify$ -- 266
+quote$ -- 0
+skip$ -- 559
+stack$ -- 0
+substring$ -- 2950
+swap$ -- 215
+text.length$ -- 518
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 208
+warning$ -- 22
+while$ -- 163
+width$ -- 0
+write$ -- 390
+(There were 2 error messages)
