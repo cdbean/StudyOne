@@ -23,6 +23,10 @@
 \usepackage{graphics} % for EPS, load graphicx instead 
 %\usepackage[T1]{fontenc}
 \usepackage{txfonts}
+\usepackage[natbib=true]{biblatex}
+\addbibresource{Dissertation.bib}
+
+
 \usepackage{times}    % comment if you want LaTeX's default font
 \usepackage[pdftex]{hyperref}
 % \usepackage{url}      % llt: nicely formatted URLs
@@ -94,7 +98,7 @@
 \maketitle
 
 \begin{abstract}
-\input{abstract}
+% \input{0_abstract}
 \end{abstract}
 
 \keywords{Collaborative information analysis; visualization; classroom study;}
@@ -102,23 +106,24 @@
 \category{H.5.3.}{Information Interfaces and Presentation
   (e.g. HCI)}{Computer-supported cooperative work} 
 
-\input{introduction}
+\input{1_introduction}
 
-\input{related_work}
+\input{2_related_work}
 
-
-\input{class_settings}
-
-
-\input{canalytics}
+\input{3_system_features}
 
 
-\input{result}
-
-\input{discussion}
+\input{4_class_settings}
 
 
-\input{conclusion}
+
+
+\input{5_result}
+
+\input{6_discussion}
+
+
+% \input{conclusion}
 
 \section{Acknowledgments}
 
@@ -148,8 +153,8 @@ To be added
 
 % REFERENCES FORMAT
 % References must be the same font size as other body text.
-\bibliographystyle{SIGCHI-Reference-Format}
-\bibliography{sigproc}
+
+\printbibliography
 
 \end{document}
 
