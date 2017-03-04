@@ -1,0 +1,693 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Badalamente2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5593c30c18550dbd719f6dd32f323c18}{%
+           family={Badalamente},
+           family_i={B\bibinitperiod},
+           given={Richard\bibnamedelima V},
+           given_i={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=a06172d22136d04dc1e2e638d1867b49}{%
+           family={Greitzer},
+           family_i={G\bibinitperiod},
+           given={Frank\bibnamedelima L},
+           given_i={F\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3adf93292846773fbfdeb5b0e3a97eba}
+      \strng{fullhash}{3adf93292846773fbfdeb5b0e3a97eba}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A workshop was held to generate ideas about future enhancements to software systems de-signed to aid intelligence analysts in the analy-sis process. Workshop participants were work-ing analysts, working members of the Pacific Northwest National Laboratory Field Intelli-gence Element. An analyst from the Counter-Intelligence Program also participated in the workshop. This paper summarizes the results of the workshop and discusses implications for intelligence analysis software tool develop-ment.}
+      \field{journaltitle}{First Annual Conference on Intelligence Analysis Methods and Tools}
+      \field{number}{May}
+      \field{title}{{Top Ten Needs for Intelligence Analysis Tool Development}}
+      \field{year}{2005}
+      \verb{file}
+      \verb :Users/dong/Downloads/TopTen{\_}Paper.pdf:pdf
+      \endverb
+      \keyw{Fusion,Information Sharing/Collaboration,Usability/Habitability,conceptualization}
+    \endentry
+    \entry{Bier2008}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c2c070b9b25ca8fccba698de3c778bff}{%
+           family={Bier},
+           family_i={B\bibinitperiod},
+           given={Eric\bibnamedelima a.},
+           given_i={E\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+        {{hash=17a960e34d7061d9189b9bdf8a10d593}{%
+           family={Card},
+           family_i={C\bibinitperiod},
+           given={Stuart\bibnamedelima K.},
+           given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=2d4b157ff5c03c9016ee4f867d4dcd20}{%
+           family={Bodnar},
+           family_i={B\bibinitperiod},
+           given={John\bibnamedelima W.},
+           given_i={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{c5923fb4b059971173c90b0754fcf21d}
+      \strng{fullhash}{c5923fb4b059971173c90b0754fcf21d}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 IEEE Symposium on Visual Analytics Science and Technology}
+      \field{isbn}{978-1-4244-2935-6}
+      \field{month}{10}
+      \field{title}{{Entity-based collaboration tools for intelligence analysis}}
+      \field{year}{2008}
+      \field{pages}{99\bibrangedash 106}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/VAST.2008.4677362
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Bier, Card, Bodnar - 2008 - Entity-based collaboration tools for intelligence analysis.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4677362
+      \endverb
+    \endentry
+    \entry{Bier2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=861ef017beeb1692b6e3a8f4938d5bad}{%
+           family={Bier},
+           family_i={B\bibinitperiod},
+           given={Eric\bibnamedelima a},
+           given_i={E\bibinitperiod\bibinitdelim a\bibinitperiod}}}%
+        {{hash=058950153df956d61485091b5a108a1e}{%
+           family={Card},
+           family_i={C\bibinitperiod},
+           given={Stuart\bibnamedelima K},
+           given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=700709937c0b299c80eced2e19ff1b98}{%
+           family={Bodnar},
+           family_i={B\bibinitperiod},
+           given={John\bibnamedelima W},
+           given_i={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{173d4b8d5082a25bb709a35d847aed7b}
+      \strng{fullhash}{173d4b8d5082a25bb709a35d847aed7b}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Software tools that make it easier for analysts to collaborate as a natural part of their work will lead to better analysis that is informed by more perspectives. We are interested to know if software tools can be designed that support collaboration even as they allow analysts to find documents and organize information (including evidence, schemas, and hypotheses). We have modified the Entity Workspace system, described previously, to test such designs. We have evaluated the resulting design in both a laboratory study and a study where it is situated with an analysis team. In both cases, effects on collaboration appear to be positive. Key aspects of the design include an evidence notebook optimized for organizing entities (rather than text characters), information structures that can be collapsed and expanded, visualization of evidence that emphasizes events and documents (rather than emphasizing the entity graph), and a notification system that finds entities of mutual interest to multiple analysts. Long-term tests suggest that this approach can support both top-down and bottom-up styles of analysis.}
+      \field{issn}{1077-2626}
+      \field{journaltitle}{IEEE transactions on visualization and computer graphics}
+      \field{number}{2}
+      \field{title}{{Principles and tools for collaborative entity-based intelligence analysis.}}
+      \field{volume}{16}
+      \field{year}{2010}
+      \field{pages}{178\bibrangedash 91}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TVCG.2009.104
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Bier, Card, Bodnar - 2010 - Principles and tools for collaborative entity-based intelligence analysis.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/20075480
+      \endverb
+      \keyw{Algorithms,Artificial Intelligence,Computer Graphics,Computer Simulation,Cooperative Behavior,Information Storage and Retrieval,Information Storage and Retrieval: methods,Models,Software,Theoretical,User-Computer Interface,collaboration,entity}
+    \endentry
+    \entry{Carroll2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8447d423dda6421bf05d5a65829d3400}{%
+           family={Carroll},
+           family_i={C\bibinitperiod},
+           given={John\bibnamedelima M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=738f54fb8eeab9bf75584c048ce234e5}{%
+           family={Borge},
+           family_i={B\bibinitperiod},
+           given={Marcela},
+           given_i={M\bibinitperiod}}}%
+        {{hash=63e919d001ab6d55e8cf1c133bda0ea1}{%
+           family={Shih},
+           family_i={S\bibinitperiod},
+           given={SI},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f9d720d09a88711653d826543fa9b8c}
+      \strng{fullhash}{9f9d720d09a88711653d826543fa9b8c}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Visual Languages {\&} Computing}
+      \field{number}{4}
+      \field{title}{{Cognitive artifacts as a window on design}}
+      \field{volume}{24}
+      \field{year}{2013}
+      \field{pages}{248\bibrangedash 261}
+      \range{pages}{14}
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Carroll, Borge, Shih - 2013 - Cognitive artifacts as a window on design.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1045926X13000207
+      \endverb
+      \keyw{design of interactive systems,information analysis,information artifacts}
+    \endentry
+    \entry{Carroll2006}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8447d423dda6421bf05d5a65829d3400}{%
+           family={Carroll},
+           family_i={C\bibinitperiod},
+           given={John\bibnamedelima M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d8cf60ed93e7af6888cf1b813bbde342}{%
+           family={Rosson},
+           family_i={R\bibinitperiod},
+           given={Mary\bibnamedelima Beth},
+           given_i={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5e7bd8af384425baa2db6708030f98e8}{%
+           family={Convertino},
+           family_i={C\bibinitperiod},
+           given={Gregorio},
+           given_i={G\bibinitperiod}}}%
+        {{hash=a0762eceb34753b1a08dd0e8d2f54d6e}{%
+           family={Ganoe},
+           family_i={G\bibinitperiod},
+           given={Craig\bibnamedelima H.},
+           given_i={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9abb2cc10ff2b98afe1f88a01e90fc9}
+      \strng{fullhash}{2b668059c85bccf2399f850b62a46417}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Critique the notion of knowledge in common in shared mental model. On one hand, the model dismisses the possibility of complementary knowledge--a participant does not need to know knowledge in other members, but knows what others know, the so-called \x{fffd}\x{fffd}\x{fffd}transactive memory'. On the other hand, shared mental model is static, while group mental model keeps evolving as communication and interaction proceed. It is more important to know how collaborators identify knowledge in common and use knowledge to coordinate their activities. In p. 25 the paper explains the notion of \x{fffd}\x{fffd}\x{fffd}activity awareness'. The goal is to shift the focus on static shared concepts (knowledge) to dynamic shared activity. The term \x{fffd}\x{fffd}\x{fffd}activity' takes from Activity Theory, which puts human behavior in an organized and contextualized framework. The paper discusses four facets of activity awareness: common ground (Clark, 1996), community of practice (Wenger et al. 2002), social capital (Coleman, 1988), and human development (Vygotsky, 1978). It uses a hypothetical emergency management scenario (forest fire fighters). Finally, the paper lists examples of design implications. One principle is that activity awareness should be supported with no extra attention and effort.}
+      \field{issn}{09535438}
+      \field{journaltitle}{Interacting with Computers}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Awareness and teamwork in computer-supported collaborations}}
+      \field{volume}{18}
+      \field{year}{2006}
+      \field{pages}{21\bibrangedash 46}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.intcom.2005.05.005
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Carroll et al. - 2006 - Awareness and teamwork in computer-supported collaborations.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://iwc.oxfordjournals.org/cgi/doi/10.1016/j.intcom.2005.05.005
+      \endverb
+      \keyw{activity awareness,awareness,collaboration,conceptual,cscw,teamwork}
+    \endentry
+    \entry{Chin2009}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=9345dbeb3260ad27f48aa4647e9c6641}{%
+           family={{Chin Jr}},
+           family_i={C\bibinitperiod},
+           given={George},
+           given_i={G\bibinitperiod}}}%
+        {{hash=36cfdce846e37dc0698bcb5cbc4bf8d7}{%
+           family={Kuchar},
+           family_i={K\bibinitperiod},
+           given={Olga\bibnamedelima A.},
+           given_i={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=edb09acf3c1fb439f9572ffaeb784292}{%
+           family={Wolf},
+           family_i={W\bibinitperiod},
+           given={Katherine\bibnamedelima E.},
+           given_i={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a20f4c571e3f9f259cb78ab8d549d9f7}
+      \strng{fullhash}{a20f4c571e3f9f259cb78ab8d549d9f7}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
+      \field{isbn}{9781605582467}
+      \field{title}{{Exploring the analytical processes of intelligence analysts}}
+      \field{year}{2009}
+      \field{pages}{11\bibrangedash 20}
+      \range{pages}{10}
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Chin Jr, Kuchar, Wolf - 2009 - Exploring the analytical processes of intelligence analysts.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=1518704
+      \endverb
+    \endentry
+    \entry{Gorg2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e48da8c8dc42567086fe19f5b8d9f389}{%
+           family={Gorg},
+           family_i={G\bibinitperiod},
+           given={C.},
+           given_i={C\bibinitperiod}}}%
+        {{hash=19c74135e03ebc400715e4cdb04543d7}{%
+           family={Liu},
+           family_i={L\bibinitperiod},
+           given={Z.},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=d2d64d36f853538f0a5e260d7db14792}{%
+           family={Stasko},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cf28996fdab5d4b8cba0282428b5944}
+      \strng{fullhash}{1cf28996fdab5d4b8cba0282428b5944}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1473-8716}
+      \field{journaltitle}{Information Visualization}
+      \field{month}{07}
+      \field{number}{4}
+      \field{title}{{Reflections on the evolution of the Jigsaw visual analytics system}}
+      \field{volume}{13}
+      \field{year}{2014}
+      \field{pages}{336\bibrangedash 345}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1177/1473871613495674
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Gorg, Liu, Stasko - 2013 - Reflections on the evolution of the Jigsaw visual analytics system.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://ivi.sagepub.com/lookup/doi/10.1177/1473871613495674
+      \endverb
+      \keyw{information visualization,intelligence analysis,investigative analysis,making,multiple views,sense-,system,vast contest,visual analytics}
+    \endentry
+    \entry{Goyal2016}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=a4d7dea8b684e51d84d8cc2a73d7f44a}{%
+           family={Goyal},
+           family_i={G\bibinitperiod},
+           given={Nitesh},
+           given_i={N\bibinitperiod}}}%
+        {{hash=5aeeedaef3d6741154ed9c367f0a1f88}{%
+           family={Fussell},
+           family_i={F\bibinitperiod},
+           given={Susan\bibnamedelima R},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1818627192850350026dd504d87087f}
+      \strng{fullhash}{b1818627192850350026dd504d87087f}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CSCW '16 Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work {\&} Social Computing}
+      \field{title}{{Effects of Sensemaking Translucence on Distributed Collaborative Analysis}}
+      \field{year}{2016}
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Goyal, Fussell - 2016 - Effects of Sensemaking Translucence on Distributed Collaborative Analysis.pdf:pdf
+      \endverb
+      \keyw{explanatory,measure}
+    \endentry
+    \entry{Goyal2014}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a4d7dea8b684e51d84d8cc2a73d7f44a}{%
+           family={Goyal},
+           family_i={G\bibinitperiod},
+           given={Nitesh},
+           given_i={N\bibinitperiod}}}%
+        {{hash=ba6a17ce749eab992f1434bd8188f50d}{%
+           family={Leshed},
+           family_i={L\bibinitperiod},
+           given={Gilly},
+           given_i={G\bibinitperiod}}}%
+        {{hash=a9b1b5d3a4f8c017c07c7fbaf6403690}{%
+           family={Cosley},
+           family_i={C\bibinitperiod},
+           given={Dan},
+           given_i={D\bibinitperiod}}}%
+        {{hash=25f4b9cf20b92b53bb8cd3caf0ab5a5f}{%
+           family={Fussell},
+           family_i={F\bibinitperiod},
+           given={Susan\bibnamedelima R.},
+           given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e55dba5e4f4adb09f7fd293ccdad696}
+      \strng{fullhash}{d4fe0fa31ab95eb66c8ef8b8fa388d15}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Proceedings of the SIGCHI Conference on Human Factors in Computing Systems}
+      \field{isbn}{9781450324731}
+      \field{title}{{Effects of Implicit Sharing in Collaborative Analysis}}
+      \field{year}{2014}
+      \field{pages}{129\bibrangedash 138}
+      \range{pages}{10}
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Goyal et al. - 2014 - Effects of Implicit Sharing in Collaborative Analysis.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.cs.cornell.edu/%7B~%7Dngoyal/1470%7B%5C_%7DChi2014.pdf
+      \endverb
+      \keyw{explanatory}
+    \endentry
+    \entry{Greenberg2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=235c46d06eaf0fbe7ff9c72d756b03a9}{%
+           family={Greenberg},
+           family_i={G\bibinitperiod},
+           given={Saul},
+           given_i={S\bibinitperiod}}}%
+        {{hash=06ee8b95b899d7e90211e780409f7699}{%
+           family={Rounding},
+           family_i={R\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0af87c60ae7ace4808c4c69cb4a4d32}
+      \strng{fullhash}{a0af87c60ae7ace4808c4c69cb4a4d32}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Notification Collage (NC) is a groupware system where distributed and co-located colleagues comprising a small community post media elements onto a real-time collaborative surface that all members can see. Akin to collages of information found on public bulletin boards, NC randomly places incoming elements onto this surface. People can post assorted media: live video from desktop cameras; editable sticky notes; activity indicators; slide shows displaying a series of digital photos, snapshots of a person's digital desktop, and web page thumbnails. User experiences show that NC becomes a rich resource for awareness and collaboration. Community members indicate their presence to others by posting live video. They regularly act on this information by engaging in text and video conversations. Because all people can overhear conversations, these become active opportunities to join in. People also post items they believe will be interesting to others, such as desktop snapshots and vacation photos. Finally, people use NC somewhat differently when it is displayed on a large public screen than when it appears on a personal computer.}
+      \field{isbn}{1581133278}
+      \field{journaltitle}{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '01)}
+      \field{number}{3}
+      \field{title}{{The Notification Collage: Posting Information to Public and Personal Displays}}
+      \field{volume}{3}
+      \field{year}{2001}
+      \field{pages}{514\bibrangedash 521}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/365024.365339
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Downloads/2000-667-19.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://portal.acm.org/citation.cfm?doid=365024.365339
+      \endverb
+      \keyw{Awareness,informal interaction,media spaces,messaging}
+    \endentry
+    \entry{Hajizadeh2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=462948606c5fc057828bc968bb4c73b3}{%
+           family={Hajizadeh},
+           family_i={H\bibinitperiod},
+           given={Amir\bibnamedelima Hossein},
+           given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=795a99893c2a080a084deb26e429696e}{%
+           family={Tory},
+           family_i={T\bibinitperiod},
+           given={Melanie},
+           given_i={M\bibinitperiod}}}%
+        {{hash=5cd50231732f67f08243051c2f5e83eb}{%
+           family={Leung},
+           family_i={L\bibinitperiod},
+           given={Rock},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4ce4a533989c0585b45f56ebb9af680}
+      \strng{fullhash}{b4ce4a533989c0585b45f56ebb9af680}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Maintaining an awareness of collaborators' actions is critical during collaborative work, including during collaborative visualization activities. Particularly when collaborators are located at a distance, it is important to know what everyone is working on in order to avoid duplication of effort, share relevant results in a timely manner and build upon each other's results. Can a person's brushing actions provide an indication of their queries and interests in a data set? Can these actions be revealed to a collaborator without substantially disrupting their own independent work? We designed a study to answer these questions in the context of distributed collaborative visualization of tabular data. Participants in our study worked independently to answer questions about a tabular data set, while simultaneously viewing brushing actions of a fictitious collaborator, shown directly within a shared workspace. We compared three methods of presenting the collaborator's actions: brushing {\&} linking (i.e. highlighting exactly what the collaborator would see), selection (i.e. showing only a selected item), and persistent selection (i.e. showing only selected items but having them persist for some time). Our results demonstrated that persistent selection enabled some awareness of the collaborator's activities while causing minimal interference with independent work. Other techniques were less effective at providing awareness, and brushing {\&} linking caused substantial interference. These findings suggest promise for the idea of exploiting natural brushing actions to provide awareness in collaborative work.}
+      \field{issn}{1941-0506}
+      \field{journaltitle}{IEEE transactions on visualization and computer graphics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Supporting awareness through collaborative brushing and linking of tabular data.}}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{2189\bibrangedash 97}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TVCG.2013.197
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Hajizadeh, Tory, Leung - 2013 - Supporting awareness through collaborative brushing and linking of tabular data.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/24051785
+      \endverb
+      \keyw{Awareness,Awareness: physiology,Communication,Computer Graphics,Cooperative Behavior,Data Mining,Data Mining: methods,Databases,Factual,Humans,Male,Psychomotor Performance,Psychomotor Performance: physiology,User-Computer Interface,Young Adult,explanatory}
+    \endentry
+    \entry{Hart1988}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d8af16904f6a9638a2be9221dfc65fa1}{%
+           family={Hart},
+           family_i={H\bibinitperiod},
+           given={Sandra\bibnamedelima G.},
+           given_i={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b1e0304e47deddb2ac58b30bd001bca8}{%
+           family={Staveland},
+           family_i={S\bibinitperiod},
+           given={Lowell\bibnamedelima E.},
+           given_i={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8053a95afbb6ed0693bf6426a46841ac}
+      \strng{fullhash}{8053a95afbb6ed0693bf6426a46841ac}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The results of a multi-year research program to identify the factors associated with variations in subjective workload within and between different types of tasks are reviewed. Subjective evaluations of 10 workload-related factors were obtained from 16 different experiments. The experimental tasks included simple cognitive and manual control tasks, complex laboratory and supervisory control tasks, and aircraft simulation. Task-, behavior-, and subject-related correlates of subjective workload experiences varied as a function of difficulty manipulations within experiments, different sources of workload between experiments, and individual differences in workload definition. A multi-dimensional rating scale is proposed in which information about the magnitude and sources of six workload-related factors are combined to derive a sensitive and reliable estimate of workload. ?? 1988.}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{0 444 70388 8}
+      \field{issn}{01664115}
+      \field{journaltitle}{Advances in Psychology}
+      \field{number}{C}
+      \field{title}{{Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research}}
+      \field{volume}{52}
+      \field{year}{1988}
+      \field{pages}{139\bibrangedash 183}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1016/S0166-4115(08)62386-9
+      \endverb
+      \verb{eprint}
+      \verb arXiv:1011.1669v3
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Downloads/NASA-TLX{\_}paper.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Heuer1999}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1d2ebfb902260478ae9c210bb3804c92}{%
+           family={Heuer},
+           family_i={H\bibinitperiod},
+           given={Richards\bibnamedelima J},
+           given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lulu.com}%
+      }
+      \strng{namehash}{1d2ebfb902260478ae9c210bb3804c92}
+      \strng{fullhash}{1d2ebfb902260478ae9c210bb3804c92}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Psychology of intelligence analysis}}
+      \field{year}{1999}
+    \endentry
+    \entry{Kang2011}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=aba2c9cf05bcbf7871d1746bbb2ad6f5}{%
+           family={Kang},
+           family_i={K\bibinitperiod},
+           given={Youn-ah},
+           given_i={Y\bibinithyphendelim a\bibinitperiod}}}%
+        {{hash=fafd31a5032b31a42bb33c9f1bc02ed7}{%
+           family={Stasko},
+           family_i={S\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{6e6c984e72bafd27f13ddc82024c7398}
+      \strng{fullhash}{6e6c984e72bafd27f13ddc82024c7398}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2011 IEEE Conference on Visual Analytics Science and Technology (VAST)}
+      \field{isbn}{978-1-4673-0014-8}
+      \field{month}{10}
+      \field{title}{{Characterizing the intelligence analysis process: Informing visual analytics design through a longitudinal field study}}
+      \field{year}{2011}
+      \field{pages}{21\bibrangedash 30}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/VAST.2011.6102438
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Kang, Stasko - 2011 - Characterizing the intelligence analysis process Informing visual analytics design through a longitudinal field st.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6102438
+      \endverb
+    \endentry
+    \entry{Martin2014}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=7ad863afd3eaa65603e8b4b85061dac5}{%
+           family={Martin},
+           family_i={M\bibinitperiod},
+           given={Iulian},
+           given_i={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ad863afd3eaa65603e8b4b85061dac5}
+      \strng{fullhash}{7ad863afd3eaa65603e8b4b85061dac5}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The International Annual Scientific Session Strategies XXI 2}
+      \field{title}{{Current training approaches in intelligence analysis}}
+      \field{year}{2014}
+      \verb{file}
+      \verb :Users/dong/Library/Application Support/Mendeley Desktop/Downloaded/Martin - 2014 - Current training approaches in intelligence analysis.pdf:pdf
+      \endverb
+      \keyw{challenges,conceptualization,education,intelligence analyst,training}
+    \endentry
+    \entry{Schmidt2002}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=f4a6c3cf657a82544dfd8fc31bc9e738}{%
+           family={Schmidt},
+           family_i={S\bibinitperiod},
+           given={Kjeld},
+           given_i={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4a6c3cf657a82544dfd8fc31bc9e738}
+      \strng{fullhash}{f4a6c3cf657a82544dfd8fc31bc9e738}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper discusses the definition of awaareness in CSCW. The term "awareness" is found ambiguous and has been used in various ways. For instance, awareness was initially adopted to denote practices through which cooperative activities are tacitly and unobtrusively aligned and integrated, but are now sometimes used to conceptualize the use of instant messaging system. The term is also often used with different adjectives, e.g. "general awareness", "collaborative awareness" "peripheral awareness" "background awareness" "passive awareness" "reciprocal awareness" "mutual awareness" "workspace awareness", etc. The first question to address with is of what cooperative actors are supposedly aware, or aware of what? The paper summarizes that it is aware of social context, and may lead to "informal interaction" and "a shared culture". Awareness is also used to denote those practices through which actors tacitly and seamlessly align and integrate their distributed and yet interdependent activities. The paper also distinguishes the difference between awareness and attention, or focus. Awareness is gathered "passively", while other workplace activities progress. Finally the paper talks about how awareness is gained so effortlessly without interrupting the current line of work. On the one hand, actors "monitor" the activities of their colleagues in the setting which doesn't require a response from them. On the other hand, actors display their activities that might be relevant to their colleagues. Besides, actors can gain awareness effortless because the world is "meaningful" to them.}
+      \field{annotation}{The term \x{fffd}\x{fffd}\x{fffd}awareness' here denotes taking heed of unfolding events and of possibly unfolding events; of things being done, of things done, and of things in need of being done; of developments within the joint effort that may be advantageous, detrimental, hazardous, etc. for one's own work; of occurrences that makes one's own work more urgent or less so, that require action or inaction, that necessitate changes to the intended course of action, etc. \x{fffd}\x{fffd}\x{fffd} all of it directly motivated by the actors' being interdependent in their work and hence by the unavoidable requirements of coordinating and integrating their various actions.}
+      \field{booktitle}{Computer Supported Cooperative Work (CSCW)}
+      \field{title}{{The Problem with \x{fffd}\x{fffd}\x{fffd} Awareness '}}
+      \field{year}{2002}
+      \field{pages}{285\bibrangedash 298}
+      \range{pages}{14}
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Schmidt - 2002 - The Problem with \x{fffd}\x{fffd}\x{fffd} Awareness '.pdf:pdf
+      \endverb
+      \keyw{awareness}
+    \endentry
+    \entry{Siemens2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cfdf8964f401ce9decf9684053aba17e}{%
+           family={Siemens},
+           family_i={S\bibinitperiod},
+           given={George},
+           given_i={G\bibinitperiod}}}%
+        {{hash=2b74a1229e1b17808c509eb11b2ddd1e}{%
+           family={Long},
+           family_i={L\bibinitperiod},
+           given={Phil},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ERIC}%
+      }
+      \strng{namehash}{1579e81fe17a7a4d484150111c75e6ca}
+      \strng{fullhash}{1579e81fe17a7a4d484150111c75e6ca}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EDUCAUSE review}
+      \field{number}{5}
+      \field{title}{{Penetrating the fog: Analytics in learning and education.}}
+      \field{volume}{46}
+      \field{year}{2011}
+      \field{pages}{30}
+      \range{pages}{1}
+    \endentry
+    \entry{Stasko2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fafd31a5032b31a42bb33c9f1bc02ed7}{%
+           family={Stasko},
+           family_i={S\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+        {{hash=307b8adb25a1770e602750d07b767f4e}{%
+           family={G\"{o}rg},
+           family_i={G\bibinitperiod},
+           given={Carsten},
+           given_i={C\bibinitperiod}}}%
+        {{hash=23418d97b69529232043a3a8d7a2ff43}{%
+           family={Spence},
+           family_i={S\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c35591fc975963c350ff1bb173bffcd9}
+      \strng{fullhash}{c35591fc975963c350ff1bb173bffcd9}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1473-8716}
+      \field{journaltitle}{Information Visualization}
+      \field{number}{2}
+      \field{title}{{Jigsaw: supporting investigative analysis through interactive visualization}}
+      \field{volume}{7}
+      \field{year}{2008}
+      \field{pages}{118\bibrangedash 132}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1057/palgrave.ivs.9500180
+      \endverb
+      \verb{file}
+      \verb :Users/dong/Documents/Mendeley/Stasko, G\"{o}rg, Spence - 2008 - Jigsaw supporting investigative analysis through interactive visualization.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://ivi.sagepub.com/lookup/doi/10.1057/palgrave.ivs.9500180
+      \endverb
+      \keyw{information,intelligence analysis,investigative analysis,multiple views,sense-making,visual analytics,visualization}
+    \endentry
+  \endsortlist
+  \missing{fig:survey}
+  \missing{Convertino2012}
+  \missing{Mahyar2013}
+  \missing{fig:sequence}
+  \missing{fig:network}
+  \missing{fig:transition}
+  \missing{Convertino2011}
+\endrefsection
+\endinput
+
