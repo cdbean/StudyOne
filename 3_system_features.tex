@@ -1,10 +1,10 @@
 \section{CAnalytics Features}\label{canalytics-features}
 
-\begin{figure*}
-\centering
-\includegraphics{./img/interface.png}
-\caption{CAnalytics user interface}
-\end{figure*}
+\begin{figure}
+	\centering
+	\includegraphics{./img/interface.png}
+	\caption{CAnalytics user interface}
+\end{figure}
 
 We developed a collaborative information analysis tool, CAnalytics, to
 support teams of analysts in identifying, visualizing, integrating and
@@ -19,27 +19,27 @@ CAnalytics supports evidence modeling through annotation. In the
 document view users can select and highlight snippets of information and
 annotate them as a type of entity such as a person, location, events,
 etc., or as a relationship between entities. Unlike in other
-entity-based systems such as \autocite{Stasko2008, Bier2010},
-in which natural language processing (NLP) techniques are employed to
-extract and model entities automatically, we use annotation to allow
-analysts to manually create evidence objects of interest. While
-algorithms for named entity recognition have improved significantly,
-developers of the entity-based systems (e.g. \autocite{Gorg2014})
-admitted that the accuracy of automatic entity extraction is not
-sufficient to support human analysis. Besides, relationships identified
-by algorithms are limited to co-occurrence of entities in the same
-document, whereas identifying meaningful relationships \emph{implicit}
-in documents that are of more importance to analysts is not possible.
-And perhaps the most problematic is the fact that the NLP treats all
-pieces of information equally with no regard to the problem analysts
-have at hand. We posit that information analysis is a progressive
-process, wherein analysts place varying priority on evidence depending
-on how they frame the problem \autocite{Heuer1999}. Manual annotation
-allows for greater user control, allows more integrated source data
-objects to be identified, and avoids the user problems associated with
-automatic identification of disaggregated people, locations and times
-\autocite{Bier2008}.Users can decide their own information of interest
-and granularity that best suits their ad-hoc analytic needs.
+entity-based systems such as \autocites{Bier2010}{Stasko2008}, in which
+natural language processing (NLP) techniques are employed to extract and
+model entities automatically, we use annotation to allow analysts to
+manually create evidence objects of interest. While algorithms for named
+entity recognition have improved significantly, developers of the
+entity-based systems (e.g. \autocite{Gorg2014}) admitted that the
+accuracy of automatic entity extraction is not sufficient to support
+human analysis. Besides, relationships identified by algorithms are
+limited to co-occurrence of entities in the same document, whereas
+identifying meaningful relationships \emph{implicit} in documents that
+are of more importance to analysts is not possible. And perhaps the most
+problematic is the fact that the NLP treats all pieces of information
+equally with no regard to the problem analysts have at hand. We posit
+that information analysis is a progressive process, wherein analysts
+place varying priority on evidence depending on how they frame the
+problem \autocite{Heuer1999}. Manual annotation allows for greater user
+control, allows more integrated source data objects to be identified,
+and avoids the user problems associated with automatic identification of
+disaggregated people, locations and times \autocite{Bier2008}.Users can
+decide their own information of interest and granularity that best suits
+their ad-hoc analytic needs.
 
 Users can add attributes to the annotated object, e.g.~adding time
 attribute in an event, and placing coordinate in a location. Users can
