@@ -12,3 +12,7 @@ node_modules/
 *.out
 *.run.xml
 *.synctex.gz
+
+*.out
+
+*.xml
