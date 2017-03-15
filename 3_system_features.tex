@@ -7,40 +7,27 @@
 	\caption{CAnalytics user interface}
 \end{figure*}
 
-We developed a collaborative information analysis tool, CAnalytics (Figure~\ref{fig:interface}), to
-support teams of analysts in identifying, visualizing, integrating and
-assessing facts from multiple sources. The design is informed by our
-paper prototype studies, where we examined communication patterns and
-team's spontaneously created artifacts when teams were engaged in a
-complex crime scenario. We also take into account findings from
-empirical studies conducted by Chin et al. \autocite{Chin2009} and Kang
-and Stasko \autocite{Kang2011} when making design decisions.
+We developed a collaborative information analysis tool, CAnalytics
+(Figure~\ref{fig:interface}), to support teams of analysts in identifying,
+visualizing, integrating and assessing facts from multiple sources. The design
+is informed by earlier paper prototype studies \autocite{Carroll2013}, where the
+researchers examined team's spontaneously created
+artifacts when teams were sovling a complex crime scenario. We also take into
+account findings from empirical studies conducted by Chin et al.
+\autocite{Chin2009} and Kang and Stasko \autocite{Kang2011} when making design
+decisions.
 
-CAnalytics supports evidence modeling through annotation. In the
-document view users can select and highlight snippets of information and
-annotate them as a type of entity such as a person, location, events,
-etc., or as a relationship between entities. Unlike in other
-entity-based systems such as \autocites{Bier2010}{Stasko2008}, in which
-natural language processing (NLP) techniques are employed to extract and
-model entities automatically, we use annotation to allow analysts to
-manually create evidence objects of interest. While algorithms for named
-entity recognition have improved significantly, developers of the
-entity-based systems (e.g. \autocite{Gorg2014}) admitted that the
-accuracy of automatic entity extraction is not sufficient to support
-human analysis. Besides, relationships identified by algorithms are
-limited to co-occurrence of entities in the same document, whereas
-identifying meaningful relationships \emph{implicit} in documents that
-are of more importance to analysts is not possible. And perhaps the most
-problematic is the fact that the NLP treats all pieces of information
-equally with no regard to the problem analysts have at hand. We posit
-that information analysis is a progressive process, wherein analysts
-place varying priority on evidence depending on how they frame the
-problem \autocite{Heuer1999}. Manual annotation allows for greater user
-control, allows more integrated source data objects to be identified,
-and avoids the user problems associated with automatic identification of
-disaggregated people, locations and times \autocite{Bier2008}.Users can
-decide their own information of interest and granularity that best suits
-their ad-hoc analytic needs.
+CAnalytics supports evidence modeling through annotation. In the document view
+users can select and highlight snippets of information and annotate them as a
+type of entity such as a person, location, events, etc., or as a relationship
+between entities. Unlike in other entity-based systems such as
+\autocites{Bier2010}{Stasko2008}, we use annotation to allow analysts to
+manually create evidence objects of interest.  Manual annotation allows for
+greater user control, allows more integrated source data objects to be
+identified, and avoids the user problems associated with automatic
+identification of disaggregated people, locations and times \autocite{Bier2008}.
+Users can decide their own information of interest and granularity that best
+suits their ad-hoc analytic needs.
 
 Users can add attributes to the annotated object, e.g.~adding time
 attribute in an event, and placing coordinate in a location. Users can
@@ -85,17 +72,17 @@ entities within a time range using timeline filter, make a spatial query
 with map filter, or select a cluster of entities by drawing a filter
 area in the network view.
 
-CAnalytics supports real-time collaborative editing, similar to the
-Google Tools. Users can open several concurrent editors to
-collaboratively edit multiple annotations. Annotations are immediately
-shared within a team and are automatically added to teammates' document
-views and other visualizations. As far as we know, this tool is the
-first to support multi-concurrent editing, which we think can improve
-fine grain coordination and awareness in complex collaborative work.
+CAnalytics supports real-time collaborative editing, similar to Google Docs.
+Users can open several concurrent editors and collaboratively edit multiple
+annotations. Annotations are immediately shared within a team and are
+automatically added to teammates' document views and other visualizations.
+Different from Google Docs, CAnalytics supports the editing of more complex data
+structures than text, including spatial data, temporal data, and object
+attribute data. 
 
 In addition to real-time data sharing, CAnalytics is built in with
 several other awareness features, including a notification system, a
-feature we named ``tool coordinator'`, a message tool, and a history
+feature we named "tool coordinator", a message tool, and a history
 tool, and a collaborative editor. A notification system sends
 individual's actions to the team, in the form of a text box in the top
 right corner of the workspace. The tool coordinator is an iconic

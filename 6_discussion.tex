@@ -87,16 +87,23 @@ retesting.
 
 Similarly, relying only on information that has already been modeled and
 delivered to analysts will probably not solve all analytical problems
-\autocite{Heuer1999}. It will probably be necessary to look elsewhere,
-re-model the data, and dig for more information. As suggested by the
-Data-Frame theory, constructing a frame is essential to determine how to
-model the data. Contemporary hypotheses help frame the problem, identify
-the gap, and determine what data to model. Re-modeling of the data could
-lead to a different picture of the problem (e.g.~adding a link between
-two clusters changes the layout of the network), leading to completely
-different analytic path. The interaction log we captured demonstrated
-such an iterative analysis process and the positive subject feedback
-confirmed data modeling as an integral part of analysis.
+\autocite{Heuer1999}. It will probably be necessary to look elsewhere, re-model
+the data, and dig for more information. We therefore implemented functionality
+for manual annotation instead of presenting analysts with algorithm-extracted
+entities. Developers of the entity-based systems (e.g. \autocite{Gorg2014})
+admitted that the accuracy of automatic entity extraction is not sufficient to
+support human analysis. Relationships identified by algorithms are mostly
+limited to entity co-occurrence in the same document, but those that are
+semantically meaningful still requires human judgment. And algorithm treats all
+pieces of information equally with no regard to the problem analysts have at
+hand. Our findings show that analysts place varying priority on evidence
+depending on how they frame the problem \autocite{Heuer1999}, and that framing
+of the problem could change as their analysis proceeds, thus leading to change
+of evidence weight as well. Perhaps a better solution is to have human in the
+loop while leveraging algorithm computing power. The algorithm could suggest
+entities of interest and the analyst decides whether they are of relevance and
+how entities are related.
+
 
 We noted the importance of representing uncertainty. We observed teams
 in our study spontaneously employed two different approaches to deal
