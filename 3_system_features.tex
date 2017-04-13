@@ -1,33 +1,33 @@
+
 \section{CAnalytics Features}\label{canalytics-features}
 
 \begin{figure*}
-	\centering
-    \label{fig:interface}
-	\includegraphics{./img/interface.png}
-	\caption{CAnalytics user interface}
+\centering
+\includegraphics{./img/interface.png}
+\caption{CAnalytics user interface}
 \end{figure*}
 
-We developed a collaborative information analysis tool, CAnalytics
-(Figure~\ref{fig:interface}), to support teams of analysts in identifying,
-visualizing, integrating and assessing facts from multiple sources. The design
-is informed by earlier paper prototype studies \autocite{Carroll2013}, where the
-researchers examined team's spontaneously created
-artifacts when teams were sovling a complex crime scenario. We also take into
-account findings from empirical studies conducted by Chin et al.
-\autocite{Chin2009} and Kang and Stasko \autocite{Kang2011} when making design
-decisions.
+We developed a collaborative information analysis tool, CAnalytics, to
+support teams of analysts in identifying, visualizing, integrating and
+assessing facts from multiple sources. The design is informed by our
+paper prototype studies, where we examined communication patterns and
+team's spontaneously created artifacts when teams were engaged in a
+complex crime scenario. We also take into account findings from
+empirical studies conducted by Chin et al. \autocite{Chin2009} and Kang
+and Stasko \autocite{Kang2011} when making design decisions.
 
-CAnalytics supports evidence modeling through annotation. In the document view
-users can select and highlight snippets of information and annotate them as a
-type of entity such as a person, location, events, etc., or as a relationship
-between entities. Unlike in other entity-based systems such as
-\autocites{Bier2010}{Stasko2008}, we use annotation to allow analysts to
-manually create evidence objects of interest.  Manual annotation allows for
-greater user control, allows more integrated source data objects to be
-identified, and avoids the user problems associated with automatic
-identification of disaggregated people, locations and times \autocite{Bier2008}.
-Users can decide their own information of interest and granularity that best
-suits their ad-hoc analytic needs.
+CAnalytics supports evidence modeling through annotation. In the
+document view users can select and highlight a snippet of text and
+annotate it as a type of entity such as a person, location, event, etc.,
+or as a relationship between entities. Unlike in other entity-based
+systems such as \autocites{Bier2010}{Stasko2008}, we use annotation to
+allow analysts to manually create evidence objects of interest. Manual
+annotation allows for greater user control, allows more integrated
+source data objects to be identified, and avoids the user problems
+associated with automatic identification of disaggregated people,
+locations and times \autocite{Bier2008}. Users can decide their own
+information of interest and granularity that best suits their ad-hoc
+analytic needs.
 
 Users can add attributes to the annotated object, e.g.~adding time
 attribute in an event, and placing coordinate in a location. Users can
@@ -55,7 +55,7 @@ The data modeled through annotation is then displayed in multiple
 coordinated views in the same workspace, including table, timeline, map,
 and network graph---artifacts frequently constructed to hold attribute
 data, temporal data, spatial data and relational data respectively
-\autocite{Carroll2013}. Figure~\ref{fig:interface} shows an example of the tool interface:
+\autocite{Carroll2013}. Figure 2 shows an example of the tool interface:
 when an annotation is created in the document view with information
 about time, location, participants, and their relationships, a new event
 is created in the timeline view, a new location is created in the map
@@ -72,17 +72,17 @@ entities within a time range using timeline filter, make a spatial query
 with map filter, or select a cluster of entities by drawing a filter
 area in the network view.
 
-CAnalytics supports real-time collaborative editing, similar to Google Docs.
-Users can open several concurrent editors and collaboratively edit multiple
-annotations. Annotations are immediately shared within a team and are
-automatically added to teammates' document views and other visualizations.
-Different from Google Docs, CAnalytics supports the editing of more complex data
+CAnalytics supports real-time collaborative editing, similar to the
+Google Tools. Users can open several concurrent editors to
+collaboratively edit multiple annotations. Annotations are immediately
+shared within a team and are automatically added to teammates' document
+views and other visualizations. More than Google Docs, CAnalytics supports the editing of more complex data
 structures than text, including spatial data, temporal data, and object
-attribute data. 
+attribute data.
 
 In addition to real-time data sharing, CAnalytics is built in with
 several other awareness features, including a notification system, a
-feature we named "tool coordinator", a message tool, and a history
+feature we named ``tool coordinator'`, a message tool, and a history
 tool, and a collaborative editor. A notification system sends
 individual's actions to the team, in the form of a text box in the top
 right corner of the workspace. The tool coordinator is an iconic

@@ -1,3 +1,4 @@
+
 \section{Introduction}\label{introduction}
 
 Collaborative information analysis is a form of sensemaking wherein a
@@ -13,58 +14,61 @@ the crime. Other examples include intelligence analysis, business
 intelligence, scientific research, and social constructivist learning.
 
 A critical challenge for information analysts is building an adequate
-preliminary data model from textual documents, and insuring that the data model
-is employed effectively in hypothesis development and evaluation. This is an
-open challenge \autocite{Badalamente2005}. Standard methods often do not support
-it at all; for example, Analysis of Competing Hypotheses (ACH) assumes that data
-has been modeled, and that relevant evidence can be adduced appropriately to
-various hypotheses, but provides no structured support for either. Visual
-analytics systems, as Ware termed as ``asymmetry in data rates''
-\autocite[382]{Ware2012}, emphasized data flowing from visualization systems to
-users far more than from users to systems. Functionalities are mostly designed
-to adjust visual representation rather than remodel data underlying the
-representation, which is a critical aspect in information analysis. In contrast,
-other techniques, such as Information Extraction and Weighting (IEW), help
-structure modeling of evidence, but do not add analytic support or extend
-utilization of evidence to hypothesis generation. We therefore are motivated to
-develop an integrated workspace in which analysts can model and analyze data in
-one place, and investigate how that will affect analytic process.
+preliminary data model from textual documents, and insuring that the
+data model is employed effectively in hypothesis development and
+evaluation. This is an open challenge \autocite{Badalamente2005}.
+Standard methods often do not support it at all. For example, Analysis
+of Competing Hypotheses (ACH) assumes that data has been modeled, and
+that relevant evidence can be adduced appropriately to various
+hypotheses, but provides no structured support for either. Other
+techniques, such as Information Extraction and Weighting (IEW), help
+structure modeling of evidence, but do not extend utilization of
+evidence to hypothesis generation. These methods seem to assume
+information analysis as a ``waterfall'' model, in which data modeling,
+data analysis, and hypothesis development are separate staged
+activities. Analysis is thus often broken into places in separate
+workspaces, and requires considerable efforts to duplicate and
+coordinate low-level data structures in different software systems. We
+therefore are motivated to develop an integrated workspace in which
+analysts can model and analyze data in one place, and we utilize the
+system as an experimental instrument to investigate analytic behavior
+afforded by such integration.
 
 Any work of information analysis at a non-trivial scale is fundamentally
-collaborative. A key enabler for effective collaboration is
-\emph{activity awareness}, defined as team's awareness of its own
-sustained collaborative activity \autocite{Carroll2006}. Derived from
-Activity Theory, activity awareness transcends synchronous awareness of
-who collaborators are, where a collaborator is looking, etc. It
-encompasses issues of many different kinds of information covering all
-aspects of an activity, such as events, tasks, goals, mediating
-artifacts, social interactions, and group values and norms, which
-becomes higher demanding as the activity becomes more complicated.
-Awareness support in such a complex activity of information analysis is
-perhaps also more challenging than many other situations
-(e.g.~collaborative writing). Teammates could be working with much more
-complex data structure (e.g.~spatial data, temporal data, and relational
-data, as opposed to only text), coordinating through multiple analytic
-artifacts (e.g.~map, timeline, network, as opposed to only a document),
-and making sense of different levels of analysis, assumptions, and
-hypotheses, both synchronously and asynchronously throughout a long-term
-course of collaborative interaction. Hence we will investigate how
-technology can mediate team collaboration in a complex analytic task
-over extended period of time.
+collaborative. Yet computer tools to support this work (e.g. Analyst's Notebook
+and PARC ACH) do not support collaboration. Thus, analysts must coordinate their
+work outside of their tool support, through frequent face-to-face meetings, or
+other messaging exchanges. A key enabler for effective collaboration is
+\emph{activity awareness}, defined as team's awareness of its own sustained
+collaborative activity \autocite{Carroll2006}. Derived from Activity Theory \autocite{Leontev1974},
+activity awareness transcends synchronous awareness of who collaborators are,
+where a collaborator is looking, etc. It encompasses issues of many different
+kinds of information covering all aspects of an activity, such as events, tasks,
+goals, mediating artifacts, social interactions, and group values and norms,
+which becomes higher demanding as the activity becomes more complicated.
+Awareness support in such a complex activity of information analysis is perhaps
+also more challenging than many other situations (e.g.~collaborative writing).
+Teammates could be working with much more complex data structure (e.g.~spatial
+data, temporal data, and relational data, as opposed to only text), coordinating
+through multiple analytic artifacts (e.g.~map, timeline, network, as opposed to
+only a document), and making sense of different levels of analysis, assumptions,
+and hypotheses, both synchronously and asynchronously throughout a long-term
+course of collaborative interaction. Hence we will investigate how technology
+can mediate team collaboration in a sufficiently complex analytic task over
+multiple usage sessions.
 
 We situate our study in classroom learning of information analysis.
 Classroom study provides a natural environment in which participants
-engage in long term, complex class projects. Due to difficulty in
+engage in multi-sessions, sufficiently complex class projects. Due to difficulty in
 accessing professional analysts or having them in long term design
 loops, analysts in training who are learning to be information analysts
-are a good compromise \autocite{Kang2011}. They already have some
-knowledge and experience with state-of-the-art analytic techniques and
-tools. In class projects students are graded on their ability to
-understand and enact professional practices of information analysis.
-This strong normative emphasis on problem solving practices is a great
-evaluation context for new interactive tools: Tools are only valuable to
-the students insofar as they actually support better practices and
-better outcomes.
+become a good compromise. They already have some knowledge and
+experience with state-of-the-art analytic techniques and tools. In class
+projects students are graded on their ability to understand and enact
+professional practices of information analysis. This strong normative
+emphasis on problem solving practices is a great evaluation context for
+new interactive tools: Tools are only valuable to the students insofar
+as they actually support better practices and better outcomes.
 
 We thus are motivated to investigate the feasibility, effectiveness and
 consequence of supporting integrated data modeling and analysis, as well
