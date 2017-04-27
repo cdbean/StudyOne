@@ -1,54 +1,51 @@
 \section{Related work}\label{related-work}
 
-Many studies have been reported to investigate specific design features
-to support collaborative information analysis. For example, Goyal and
-Fussell \autocite{Goyal2016} studied the effect of hypotheses sharing on
-sensemaking. Mahyar and Tory \autocite{Mahyar2013b} designed a
+\subsection{Intelligence analysis workflow}
+
+Pirolli and Card's Think Loop Model \cite{Pirolli2005} is a widely used model of intelligence analysis. The model describes the process of information foraging and sensemaking in which raw evidence is successively modeled, filtered, and synthesized into a best hypothesis. The model is a bottom-up process of structure building, but also includes a local feedback loop at each stage. Thus, analysts can reconsider propositions in the evidence file, asking how they are related, or a given hypothesis, asking what schemata it rests upon.
+
+Empirical studies of information analysis suggest that the iterative looping can have wider scope than is obvious in the Pirolli and Card's model \cite{Pirolli2005}. For example, Chin et al. \cite{Chin2009} observed five professional intelligence analysts working both individually and as a team. They found that analysts often need to review the original documents even at advanced stages of analysis. The scope of these reconsiderations is not consistent with the local feedback architecture of the Think Loop Model. It seems more consistent with a parallel or multi-phased model \cite{Wheaton2011} in which structure building occurs at a variety of levels in parallel. Similar findings were reported by other empirical studies \cite{Isenberg2008b,Kang2011,Herrmann2013a}. 
+
+However, tools supporting intelligence analysis are often designed targeted at a single phase of activity, and thus not supporting the whole workflow. Many analytic tools assume data model has been
+finalized and ready to be visually analyzed, and affords no utility
+to construct or refine data models. As Ware termed as \emph{``asymmetry in
+data rates''} \cite[p.382]{Ware2012}, analytic tools emphasized data
+flowing from systems to users far more than from users to systems.
+Functionalities are mostly designed to adjust data representation
+rather than modeling, which are in fact equally important in intelligence analysis. A report from a workshop of professional intelligence analysts listed ``dynamic data processing and visualization'' as one of top requirements in computational support \cite{Badalamente2005}, and Kang et al. \cite{Kang2011} made another call from findings of their empirical study.
+
+\subsection{Collaboration and awareness in intelligence analysis}
+
+Collaboration is critical in intelligence analysis. The intelligence community has called for collaboration, and indeed closer collaboration, as opposed to merely coordinating draft products by the end \cite{Vision2015}. Empirical studies \cite{Chin2009,Kang2011} reported that analysts' practice was fundamentally collaborative. 
+
+However, computational tools supporting intelligence analysis either do not do support collaboration, or they do not integrate serious analytic support. On one hand, not most analytic tools (e.g.~Analyst's Notebook and PARC ACH) are designed for single user only, with only a few exceptions (e.g.~Te@mACH \cite{Globalytica2017}). On the other hand, collaboration tools only support general coordination between teams and agencies, without analytic functionalities, as Treverton \cite{Treverton2016} reviewed collaboration tools currently used in the intelligence community. For example, Intellipedia \cite{Intelink2017} is a wiki platform for sharing of intelligence reports and documents, yet it does not support data modeling and analysis at all. 
+
+A key enabler for effective collaboration is \emph{activity awareness}, defined as
+team's awareness of its own sustained collaborative activity
+\cite{Carroll2003,Carroll2006}. Derived from Activity Theory \cite{Leontev1974},
+activity awareness encompasses information covering all aspects of collaboration, such as partner presence, mediating artifacts, group actions, social interactions, shared information, and group values and norms. Activity awareness has been utilized as a design concept in guiding and evaluating collaboration features.
+
+% place system figure here simply for paper layout
+\begin{figure*}
+\centering
+\includegraphics[width=2\columnwidth]{./img/interface.png}
+\caption{CAnalytics user interface. Each window is closable, movable, and resizable. Shown here are \emph{document} view (top left), timeline (bottom left), network (top right), map (bottom middle), and message (bottom right). Other windows include table, notepad, and history view. }\label{fig:canalytics}
+\end{figure*}
+
+Many lab studies have been reported to investigate specific awareness features
+to support collaboration in intelligence analysis. For example, Convertino et al. \cite{Convertino2011} examined the use of public and private views for role based collaboration. Goyal and
+Fussell \cite{Goyal2016} studied the effect of hypotheses sharing on
+sensemaking. Mahyar and Tory \cite{Mahyar2013b} designed a
 visualization to connect collaborators' common findings and evaluated
 its support for team performance. Hajizadeh et al.
-\autocite{Hajizadeh2013} explored how sharing teammate's interactions
-affects awareness. These studies report interesting results of
-controlled lab studies to validate hypotheses of specific design
-features. However, they do not provide insight on how teams would
-collaborate with a complete tool as nexus of features in the real world
-over extended period of time.
+\cite{Hajizadeh2013} explored how sharing teammate's interactions
+affects awareness. These studies provide evidence to validate hypotheses of specific design
+features. However, due to time constraint (mostly within one hour), these studies had to employ
+a simplified task with reduced content and complexity. Artifacts created by participants were thus relatively simple and superficial
+(e.g.~with a single artifact or few items in an artifact). More complex
+task would have pushed participants to create more sophisticated artifacts
+(e.g.~multiple views or cluttered display that requires filtering) and
+to try balancing between team coordination and individual analysis, which
+would have provided more insights into team-based analytic process. Our study aims to examine tool usage in a course project, which allows for higher task complexity and longer teamwork time, thus gaining more insight into the team process.
 
-Field studies were conducted aimed to understand design requirements of
-collaborative information analysis in more realistic settings. Chin et
-al. \autocite{Chin2009} observed and analyzed the analytic strategies,
-work practices, tools ad collaboration norms of professional
-intelligence analysts. Kang and Stasko \autocite{Kang2011} studied how
-student analysts, as in our study, completed in-class intelligence
-projects. Carroll et al. \autocite{Carroll2013} attempted to model a
-complex analytic task scenario in a lab setting, and examined the
-development of team awareness in a four-hour-long task. These studies
-helped improve understanding of current work practice with
-state-of-the-art tools or no tools at all. We built our tool based upon
-their study findings, and pursue to further explore design implications
-by investigating tool usage in a similar naturalist environment.
 
-Our study took place during the 10th week of the course. Before that
-students learned several analytic techniques, including IEW (a technique
-to extract and assess values of evidence), ACH (a technique to evaluate
-multiple hypotheses against evidence), timeline analysis and network
-analysis, as well as state-of-the-art tools to implement these
-techniques. In the eighth weeks students practiced applying these
-techniques in a hands-on project. A typical workflow started with IEW to
-extract and model evidence from documents, followed by building analytic
-artifacts such as an ACH Matrix in PARC ACH, a timeline and a network
-graph in Analyst's Notebook. Since data from IEW table could not be
-shared or extended to other tools, students had to replicate data for
-each different tool. Most tools they used lacked serious collaboration
-support (except that some teams used Google Doc to construct an IEW
-table). Analysts were unable to contribute simultaneously (an issue
-known as production blocking \autocite{Diehl1987a}). The analysis work
-was often divided by tools: each person created and analyzed an artifact
-with a tool on their own. This had the consequence that findings and
-hypotheses be made without integrating collective efforts and diverse
-knowledge. Analysts must coordinate work by manually sharing notebooks
-or graphs through email or cloud storage service (e.g.~Dropbox),
-resulting in a scattered placement of results, requiring repeated manual
-resynchronizing to identify redundant or missing pieces of information,
-analysis of information, and analytic hypotheses. The instructor and
-students in our study were all aware of the shortcomings of available
-tools with respect to support of collaboration.

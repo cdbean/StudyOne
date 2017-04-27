@@ -1,44 +1,55 @@
-\section{Result}\label{result}
+\section{Results}\label{results}
 
 Over the week, teams created 1805 entities and 1529 relationships in
-total. The number of entities teams created ranged from 24 to 223 (M=82,
-SD=39.9), and the number of relationships ranged from 7 to 237 (M=69.5,
-SD=51.0). The large variety was related to team data modeling strategy,
-which will be detailed later.
+total. The number of entities teams created ranged from 24 to 223 ($M=82,
+SD=39.9$), and the number of relationships ranged from 7 to 237 ($M=69.5,
+SD=51.0$), showing a large variety. The big range was related to different team data modeling strategy,
+which will be discussed in detail later. While teams could work on the project any time, we found three intensive usage sessions from the interaction log: two were in class and one was outside class, before the team report deadline.
 
-Overview of the survey items indicates that students rated positive on
-CAnalytics overall, as shown in Figure \autocite{fig:survey}. CAnalytics
-were ranked favorably in all aspects except cognitive load, towards
-which they had a close to neutral feeling.
+CAnalytics was generally well received by the students. An overview of 
+the related survey items (shown in Figure~\ref{fig:survey}) shows that students positively rated all aspects
+of the tool except cognitive load, towards which they had a close to neutral feeling. % \bvh{provide more detail here, don't just rely on the figure} 
 
 \begin{figure}
 \centering
 \includegraphics[width=3.00000in]{./img/survey_boxchart.jpg}
-\caption{Survey responses (box shows Q1-Q3 and median; whiskers show
+\caption{Survey responses (box shows Q1-Q3 and median; ends of whiskers show
 maximum and minimum)\label{fig:survey}}
 \end{figure}
 
-\subsection{Intertwined data modeling and data
-analysis}\label{intertwined-data-modeling-and-data-analysis}
+\subsection{Interleaving data modeling and analysis}\label{interleaving-data-modeling-and-data-analysis}
 
-We examined the pattern of data modeling and data analysis first by
+%\bvh{you need the reason why this is interesting...i.e. evidence of these behaviors shows that the tool was used collaboratively}
+
+%\bvh{also what exactly do you mean by interleaving ... you should probably give an example or something??? maybe not, up to you}
+
+We examined the pattern of data modeling and analysis first by
 qualitatively looking at a visualization of the entire interaction log
-(e.g.~Figure \autocite{fig:intertwined}a shows one team's interaction). All
-teams worked intensively on data modeling as they started off the
-project. This was the phase when teams were getting themselves familiar
-with the documents and made initial input into CAnalytics. Starting from
-certain point (e.g.~indicated by the blue dash line in the figure),
-however, teams started to work on visualizations. They did not wait to
-start analysis till they finished data modeling, as they returned to
-making annotations again later. Indeed, the activity of data modeling
-and data analysis were highly intertwined since then. Participants
-switched from one activity to the other activity frequently. The state
-transition diagram \autocite{fig:intertwined}b demonstrates the
-interweaving in a quantitative way, in which we encode the number of
-transitions as width of the link. This result confirmed our design
-expectation that data modeling and data analysis should not be separate
-staged activities, and that an integrated environment streamlines the
-workflow.
+(e.g.~Figure~\ref{fig:interleaving}a shows one team's interaction). All teams
+worked intensively on data modeling as they started off the project.
+This was the phase when teams were getting themselves familiar with the
+documents and made initial annotation input into CAnalytics. Starting from certain
+time point, all teams started analysis on visualizations,
+followed by frequent transitions between data modeling and analysis. 11
+teams started data analysis in the first usage session, while the other
+11 teams had this transition in the second usage session. In average,
+the transitions occurred in 47.6 minutes after the project began. The earliest transition occurred in 14 minutes after the team started the project, and the last team
+had the transition around 104 minutes, later in the second session. We
+also found performance difference among teams that started analysis
+early and those late. Teams that started analysis in session one had
+higher performance ($M=8.6$) than teams that started from session two
+($M=6.7$), although the difference was not statistically significant.
+
+The fact that participants returned to making annotations after analysis
+indicated that they did not wait to start analysis till they had
+finished modeling. Indeed, the activity of data modeling and data
+analysis were highly interleaved throughout the project (as shown by the interleaving color bar in Figure~\ref{fig:interleaving}a). Participants switched from
+one activity to the other activity frequently. The state transition
+diagram (Figure~\ref{fig:interleaving}b) demonstrates the interleaving in an aggregated way, in which we
+encode the number of transitions as width of the link. This result
+confirms our design expectation that data modeling and analysis should
+not be supported as separate staged activities, and that an integrated
+environment should streamline the workflow.
 
 \begin{figure*}
 \centering
@@ -47,63 +58,46 @@ workflow.
 colored marks indicates the sequence of top level activities a
 participant performed. (b) State transition diagram of interaction logs of Team 107. Each node is an activity, whose size represents the time spent on the it (M: data modeling; A: data analysis; H: hypothesis development; C: coordination); a
 link represents a switch from one activity to another, whose width
-encodes the number of switches. We see highly frequent transitions between data modeling and data analysis \label{fig:intertwined}}
+encodes the number of switches. We see highly frequent transitions between data modeling and data analysis \label{fig:interleaving}}
 \end{figure*}
 
 
-\subsection{Data modeling: accretion
-vs.~filtering}\label{data-modeling-accretion-vs.filtering}
+\subsection{Data modeling: filtering vs.~accretion}\label{data-modeling-accretion-vs.filtering}
 
 \begin{figure}
 \centering
 \includegraphics[width=3.20000in]{./img/network_accretion_filter.png}
 \caption{Network artifact comparison: filtering (a)
-vs.~accretion\label{fig:network_accretion}}
+vs.~accretion (b) \label{fig:network_accretion}}
 \end{figure}
 
-From granularity of entities, We noted a distinction between accretion
-and filtering strategies in data modeling, similar to what was reported in the paper prototype study. Filtering is selectively modeling of data
+We noted a distinction between filtering and accretion
+strategies in data modeling, similar to what was reported in the paper prototype study \cite{Carroll2013}. Filtering is selectively modeling of data
 and adding to an artifact. Users must decide what information is
 relevant, and thus what is to be excluded, as well as what granularity
 of information is to model. Filtering requires more team coordination,
 because teammates must reach a common ground of the current problem as
-well as information needed to answer the problem. Figure
-\autocite{fig:network_accretion}a is an example of filtering,
-represention only the key information of robberies.
+well as information needed to answer the problem. Figure~\ref{fig:network_accretion}a is an example of network built with filtering strategy. It only represented key information of robberies.
 
 Accretion is an attempt to comprehensively represent the problem by
 adding all information to an artifact. Users extract every fact from the
 document, regardless of its immediate relevance to the problem.
-Accretion costs less coordination as it is relatively mechanical note
-taking. A disadvantage of accretion is that it could be time consuming
+Accretion requires less coordination as it is relatively mechanical note
+taking. A disadvantage of accretion is that it can be time consuming
 to model all details and the produced artifact could be fairly complex.
-The strategy causes a huge variety of number of created entities and
-relationships mentioned earlier. An example is Team 108, who modeled
-every step the suspects took, which resulted in far more entities than
-the average and more cluttered network view (Figure
-\autocite{fig:network_accretion}b). Users reflected that they spent too
-much time in details that they lost the bigger picture:
+An example is Team 108, who modeled
+every step the suspects took, which resulted in far more entities (223) than
+the average (82) and more cluttered network view (Figure~\ref{fig:network_accretion}b). This accounted for the large range of entities created. Users also realized the problem. They reflected that they spent too
+much time in detail events, and many did not help their analysis at all: 
 
 \begin{quote}
-We would find ourselves glued to our computer screens, and spent too
-much time on intelligence gathering rather than analysis (P135)
-\end{quote}
-
-While similar data modeling strategy was reported in the paper prototype
-study \autocite{Carroll2013}, users with CAnalytics seemed far more
-tempted to accretively add information, with far more entities and
-cluttered views. Students realized in the end that many annotations did
-not help them solve the problem at all because many entities were
-unrelated to their problem.
-
-\begin{quote}
-I felt that after we were done annotating, we hadn't really accomplished
+\emph{I felt that after we were done annotating, we hadn't really accomplished
 anything and that we were no closer to solving the case than when we had
 started. In the end it didn't really help that we had annotated the
-data. (P86)
+data. (P86)}
 \end{quote}
 
-\subsection{Artifact construction: fact
+\subsection{Artifact analysis: fact
 vs.~inference}\label{artifact-construction-fact-vs.inference}
 
 \begin{figure}
@@ -117,204 +111,212 @@ evidence that connects clusters\label{fig:network_cluster}}
 We examined the analytic artifacts teams created, the network
 graph in particular because social relationships played the most
 critical role in this specific scenario and teams spent most time on
-network analysis (as reflected from the log). We found the network
-artifacts fell into one of two categories: the networks consisted of 1)
-separate clusters, or 2) connected clusters. For example, networks from
-8 teams (36\%, mean performance=7.8) consist of separate clusters
-(Figure \autocite{fig:network_cluster}a). Nodes within a cluster are
+network analysis (as reflected from the log). We found a clear distinction among the network artifacts. For example, networks from
+8 teams ($\text{mean performance score}=7.8$) consist of separate clusters
+%\bvh{-I don't think you say what is good and what is bad though??-yes, in the end of settings section -do you ever describe what the performance means?}
+(Figure~\ref{fig:network_cluster}a). Nodes within a cluster are
 connected, representing information space of a robbery case; Nodes
 between clusters are nonetheless not connected, indicating each robbery
-is a self-contained case. However, these teams still claimed connections
-between robberies in their report. Where did they externalize these
-connections? Or did the teams simply share orally and held them in mind?
-It turns out that teams documented possible relationships between
-robberies in the notepad tool.
+is a self-contained case. However, these these teams did not miss the connections between robberies, as these teams still discussed these robbery connections in their report. 
+It turned out that these teams documented any possible relationships between
+robberies in the notepad tool as a list, separate from the network graph; that is, these teams distinguished information content and synthesized them in different artifacts.
+%\bvh{add something, but still not powerful enough yet -what does this have to do with anything? I think you need a sentence here saying what this means, you don't explain this until 2 paragraphs later}
 
-In contrast, 6 other teams (mean performance=8.3) created networks
+In contrast, 6 other teams ($\text{mean performance score}=8.3$) created networks
 composed of connected clusters. While a cluster is still a
 representation of a robbery, some of them are connected through an
-evidence node. An example is Figure \autocite{fig:network_cluster}b, in
-which we mark four \emph{connectors} that link the clusters. These
+evidence node. An example is Figure~\ref{fig:network_cluster}b, in
+which we mark in red four \emph{connectors} that link the clusters. These
 connectors were key evidence that led the teams to hypothesize that
 those robberies were related and might be committed by the same criminal
-group.
+group (e.g. the white van shown up in two robberies). These teams represented all information in one artifact.
+%\bvh{how about this - same comment, outline what it means in a sentence and then tie them together like you do in the next sentence.}
 
-While many causes might account for the different network views, we
-attempt to interpret the difference from a perspective of
-\emph{uncertainty}. For instance, links within a cluster are often
-factual relationships modeled from raw documents (e.g.~a white van was
-witnessed at a location), but links between clusters are often
-inferences beyond literally documented (e.g.~a white van at location A
+By comparing these two types of networks, we found that links within a cluster were typically
+\emph{factual} relationships modeled from raw documents (e.g.~a white van was
+witnessed at a location), and links between clusters were often
+\emph{inferences} beyond literally documented (e.g.~a white van at location A
 is the same van witnessed at location B). Teams creating separate
-clusters only represented facts in the network and held evidence with
+clusters represented only facts in the network and held evidence of
 uncertainty in a separate artifact. One advantage of distinguishing
-facts and inferences is that teams can be aware of assumptions made when
+facts and inferences is that teams can always be aware of assumptions made when
 making a conclusion. And since all inferences are held in one place,
 teams are forced to confront them and review their uncertainty
 iteratively in the process. However, the strategy also adds difficulty
 to analysis as analysts may overlook or fail to combine evidence
 scattered in different artifacts.
 
-On the contrary, some other teams overlaid facts and inferences in the
-same artifact. Both facts and inferences drove the layout of the
-network, thus influencing team's framing of the problem. Most teams made
-evaluation of the uncertainty of inferences when adding them to the
-network. This strategy was relatively more interactive among teammates:
-they needed to negotiate, evaluate, and reach consensus on the value and
-validity of every inference. To some extent teams might forget whether a
-relationship is factual or inferred, and ask whether conclusion derived
+% place table simply for paper layout
+\input{./awareness_table}
+
+
+On the contrary, in connected-cluster networks, facts and inferences overlaid in one artifact together drive the layout of the
+network, are better synthesized, and give analysts a clearer picture in one place. Teams may discuss and evaluate the level of uncertainty of inferences to decide whether to add them to the
+network. This strategy makes analysis more interactive among teammates:
+they need to negotiate, evaluate, and reach consensus on the value and
+validity of inferences. However, a problem with mixing facts and inferences is, to some extent teams might forget whether a
+link is factual or inferred, and ask whether conclusion derived
 from the visualization can be trusted under uncertainty.
 
 \subsection{Collaboration and
 awareness}\label{collaboration-and-awareness}
 
+
 One recurring theme in the subject feedback we collected was that the
-collaboration features were helpful for solving the problem on a team
-basis. In the survey 88\% of the students rated positively on their
+collaboration features were helpful for solving the problem. In the survey 
+88\% of the students positively rated their
 group awareness. Participants appreciated that the tool complemented
-traditional analytic tools such as Analyst's Notebook with real time
-synchronization features like Google Doc, and added visual analytics to
-Google Doc which only supports text writing. To quote one participant,
+traditional analytic tools, describing CAnalytics as Analyst's Notebook with real time
+synchronization features similarly to Google Docs, or described it as Google Doc with added visual analytics. To quote one participant,
 \emph{``CAnalytics is like an analysts notebook that multiple people
 could work on at once {[}\ldots{}and{]} an analysts version of a Google
-Doc.''} (P65). For example, participants reflected that they could now
-contribute simultaneously without concerns of interference and could
-have everything in one place instead of manually sharing documents using
+Doc'' (P65)}. 
+
+Participants reflected that they could now contribute simultaneously 
+without concerns of interference and could
+have everything in one place instead of manually sharing documents via a
 cloud service.
 
 \begin{quote}
-It was much easier to coordinate as a team with CAnalytics because we
+\emph{It was much easier to coordinate as a team with CAnalytics because we
 could all work on the same system at the same time. Without CAnalytics,
 we were forced to do the work separately and compile all the work onto
-one system after we had finished. (P156)
+one system after we had finished. (P156)}
 \end{quote}
 
 Students also reported that being able to see teammate's status made the
 task more motivating and engaging:
 
 \begin{quote}
-During class I wasn't sure if my teammates were doing work for that
+\emph{During class I wasn't sure if my teammates were doing work for that
 class or another thing but then seeing their dot {[}tool indicator{]}
 switch between applications on the software and updates pop up on my
-screen I knew they were doing work for 231. (P141)
+screen I knew they were doing work for 231. (P141)}
 \end{quote}
 
 \begin{quote}
-The fact that you can see what other teammates are doing and they can
+\emph{The fact that you can see what other teammates are doing and they can
 see what you are doing creates a sense of accountability in terms of
-separating the work load. (P51)
+separating the work load. (P51)}
 \end{quote}
 
-Another repeated theme was awareness that all teammates were executing
+The motivating effect of awareness might account for, at least partially, 
+the fact that teams were participating equally. We measured the equality of 
+participation in terms of number of created entities and time spent on 
+CAnalytics. We refer to Olson \cite{Olson2017} in calculating equality: one 
+minus the variance of proportions times 100 (for better readability). Thus 
+the score ranges from .67 (when only one person contributes in a three-member 
+team) to 1.00 (when everyone participated exactly equally), and higher 
+score indicates higher balanced participation. The resulted equality of 
+created entities and time was .96 and .99 in average respectively. This 
+indicates participants contributed fairly evenly.
+
+Another repeated theme was the awareness features helped assure all teammates were executing
 the team plan. Participants reflected on their experience that a common
-team breakdown was misunderstanding of the team plan. Teammates thought
-they had reached agreement to a plan till in the end to find no
-collaborators were doing the things as expected. CAnalytics made it
-easier because they could always see if teammates were doing the
-expected work; and if not, they could communicate immediately rather
-than in the end of the project.
+team breakdown was misunderstanding of the team plan, and that they did 
+not realize the misunderstanding until everyone had spent significant efforts 
+finishing their ``perceived'' job. CAnalytics made plan execution assured 
+because they could always see where teammates were working and what they 
+were generating; and if anything unexpected happened, they could communicate 
+immediately rather than in the end of the project.
 
 Participants reported many other instances of awareness they realized
 using CAnalytics. We categorized them based on the element of awareness,
 or the essential problem of awareness of \emph{what}
-\autocite{Schmidt2002}, into social awareness, information awareness,
+\cite{Schmidt2002}, into social awareness, information awareness,
 action awareness, history awareness, and intention awareness, as shown
-in Table \autocite{tab:awareness}.
+%in Table~\ref{tab:awareness}. somehow shown in Table 5.4
+in Table 1.
 
 When asked what features helped them stay aware of team activities, 28
 participants mentioned the tool coordinator, 24 mentioned the
 notification system, 19 mentioned the history tool, 14 mentioned the
 real-time update of user-generated data, 12 mentioned the collaborative
-editor, and 7 mentioned the message tool. While the number of mentions
-does not simply indicate tool usefulness, it suggests users appropriate
-these features and were explicitly aware of their support.
+editor, and 7 mentioned the message tool. Although the number of mentions
+does not simply indicate tool usefulness, it suggests users were explicitly aware of these awareness features and appreciated their support.
 
-\input{./awareness_table}
 
 Students' positive feedback on awareness was further corroborated by
 interaction logs. For example, we measured the number of entities
-accessed by collaborators versus by the author only. While data
-generated by users is automatically shared, it is up to collaborators to
-choose to read the shared information or ignore information altogether.
-A high awareness team would keep updated with collaborators' generated
-information and read information soon after it is shared; whereas a low
-awareness team might experience a significant delay or even never access
-it. We found that most teams shared a high proportion of entities
-(M=77.6\%). We found that in average, 77.6\% of the created entities
-were accessed by at least one teammate.
+accessed by other collaborators. While data
+generated by users is automatically shared, it is up to collaborators 
+whether to read/edit the shared information or ignore information altogether.
+The log showed that on average, 77.6\% of the created entities
+were \emph{read} by at least one other teammate. Further, We measured how 
+many entities were \emph{edited} by collaborators, a phenomenon we argue 
+requires higher awareness, because the collaborator must not only realize 
+the creation of the entity, but also understand its content. We 
+defined \emph{peer editing}, manipulated as the ratio of editing other's 
+entities over editing those created by oneself. We found that all teams 
+edited collaborator's entity objects, with a peer editing value equal 
+to .83 ($SD=.45$). The result suggests that teams had little difficulty 
+accessing and modifying partner's created data objects.  
 
-One major critique is the lack of sharing of intermediate analytic
-insights in close collaboration. To gain insights individuals are
-constantly exploring and rearranging visualizations. For example,
-analysts can apply a filter to have a reduced data view of interest,
-highlight an area to sharpen analytic focus, and re-layout the node-link
-graph to make their own cluster of relevant entities. While the shared
-data pool represents the information the team have in common, views of
-data reflect and contextualize individual's \emph{interpretations}
-toward the data. The view together with its interpretation represents
-user's intermediate analytic status. While it may not be a mature
-hypothesis or conclusion, the intermediate insight is still worth
-sharing because it may inspire collaborators. With CAnalytics
-participants complaint that they could not easily communicate insight
-together with the associate views to the team. The team could \emph{``be
+%/bvh{I don't understand this paragraph...what are you trying to say...that they would like to have a shared space?}
+One major critique is the lack of support for sharing intermediate analytic
+insights. An insight is revealed and contextualized by a specific arrangement of views, e.g.~a reduced data view of interest through filter, a highlighted entity representing the analytic focus, and a clustering layout of network to demonstrate a specific relationship. While teammates share the same data pool, they are likely to have different views of data, and thus different \emph{interpretations}
+toward the data. A dynamic view together with its interpretation represents
+user's intermediate analytic status. Sharing these insights could inspire team analysis \cite{Gotz2009d}. With CAnalytics
+participants complaint that they could not easily make such communications. The team could \emph{``be
 looking at the same information but arranged in completely different
 ways'' (P131)}.
 
-\subsection{Collaboration strategies}\label{collaboration-strategies}
+\subsection{Labor division strategies}\label{labor-division-strategies}
 
-We noted different collaboration strategies from interaction logs. Seven
-teams followed \emph{document-based collaboration}: they divided their
-work by evenly distributing the provided documents among team members
-(as shown in Figure \autocite{fig:labor_division}a). Each member read
+We noted different labor division strategies from interaction logs. Seven
+teams followed \emph{document-based collaboration} (DBC): they divided their
+work by evenly distributing the different documents among team members
+(as shown in Figure~\ref{fig:labor_division}a). Each member read
 through and made annotations on their own set of documents. An advantage
 of this strategy is that individuals get less workload and thus have
-more time to think deep into their own documents. Individuals also
+more time to think deeply about their own documents. Individuals also
 implicitly take over the responsibility of their assigned documents to
 gain insights and share them when the team synthesize findings in later
 analysis. When the team needs information from one document, they rely
-on the ``document owner'' to share his/her finding. The fallback of this
+on the ``document owner'' to share his/her finding. The failing of this
 strategy is thus in case an individual fails to identify or convey
 evidence in the document, the team may overlook the information
-altogether \autocite{Borge2012}.
+altogether \cite{Borge2012}.
 
-In contrast, four teams followed an \emph{entity-based collaboration}
+Four teams followed an \emph{entity-based collaboration} (EBC)
 strategy. Instead of dividing by documents, they divided work by entity
 types: each individual went through all documents but only annotated
 entities of certain types, e.g.~teammate A only annotated persons and
-teammate B annotated locations (as shown in Figure
-\autocite{fig:labor_division}b). This strategy saves teammate's time on
-data modeling. And since each person focuses only on certain entities,
+teammate B annotated locations (as shown in 
+Figure~\ref{fig:labor_division}b). This strategy seems to save teammate's time in the
+data modeling phase. And since each person focuses only on certain entities,
 they are more likely to identify recurring patterns, for example, the
 white van used in multiple robberies. However, focusing on certain
 entities could lead individuals to superficial syntactic scanning of
 documents instead of deep reading. This could further lead to extremes
 of annotating all entities of the type, whether they are related to the
-problem at hand or not. We found from the interaction log that EBC teams
-created more entities (M=101) in average than DBC teams (M=94.5), which
-seems to back our guess. Moreover, with emphasis on certain entities,
+problem at hand or not, similar issues with accretion strategy discussed 
+beforehand. Indeed we found from the interaction log that EBC teams
+created more entities ($M=101$) in average than DBC teams ($M=94.5$). 
+Moreover, with emphasis on certain entities,
 individuals are likely to know only partial aspects of a robbery and
 hence have difficulty connecting and synthesizing facts to deduce any
 conclusion. As one participant reflected, \emph{``we broke up by entity
 type, which reduced our individual involvement in each other's entity
-types (P99).''} The average performance of EBC teams (M=7.63) was lower
-than that of DBC teams (M=9.25), which seems to confirm our analysis,
-although the difference was not statistically significant.
+types'' (P99).} The result indicated that the average performance of EBC teams ($M=7.63$) was lower
+than that of DBC teams ($M=9.25$), although the difference was not statistically significant.
 
 The rest (eleven) of the teams did not show specific labor division
 patterns. Indeed, teams did not necessarily have to divide their work in
 order to collaborate, especially when the collaborative tool provides
 possibility to work closely together. Teammates could read and annotate
 the same document because they could see new annotations by others in
-real time and build on other's annotation. Figure
-\autocite{fig:close_collaboration} shows an example where one team
-worked on the same document simultaneously. This has the advantage that
+real time and build on other's annotation. Figure~\ref{fig:close_collaboration} 
+shows an example where one team worked on the same document simultaneously. 
+The three team members exhibited high synchronicity in which document to
+analyze, which we believe was not by accident. This has the advantage that
 teammates are always on the same page and can discuss hypotheses
 throughout the analysis process. Participants did have concern for
-possible duplication. As one participant complaint, ``we could not
+possible duplication. As one participant complaint, \emph{``we could not
 actively see the changes our teammates were making until well after they
-had made them.(P46)'' This was because an annotation was shared only
-\emph{after} it was created, yet another teammate might be drafting an
-annotation in the meantime.
+had made them'' (P46)}. This was because an annotation was shared only
+\emph{after} it was created, yet another teammate might already be drafting an
+annotation on the same text snippet in the meantime.
 
 \begin{figure}
 \centering
@@ -336,3 +338,26 @@ annotation, color coded by document ID. The red blocks highlights the
 periods when all teammates worked on the same documents
 simultaneously.\label{fig:close_collaboration}}
 \end{figure}
+
+\subsection{Interaction with team performance}
+
+To systematically evaluate factors that influenced team performance, 
+we conducted a multiple linear regression between team performance 
+as the dependent variable and team collaboration characteristics 
+(i.e.~equality of entities and time respectively, peer editing, number of entities created, shared 
+entities, switch time from data modeling to analysis) as independent 
+variables. We treated a team as a system \cite{Henman2003b} and modeled team-level 
+relationships. 
+The relationship of individual level variables (e.g. 
+survey items) could not be simulated with regression directly because data within a team was interdependent. The analysis was performed using \emph{R} \cite{R2016}.
+
+The result is shown in Figure~\ref{fig:regression}. The regression model was found to be statistically significant ($F(5,16)=4.58; p<.01$), with an R squared equal to .59, meaning 59\% of the variability in team performance was explained by the model. Five team-level variables contributed significantly to prediction of team performance. The model suggested that balanced contribution of entities predicted higher team performance scores ($\beta=45.79, p<.05$), but balanced participation time did not show such effect. More peer editing led to better performance ($\beta=3.89, p<.01$), implying that analysts should be encouraged to model data as a team, and to remodel other's entity objects as needed. Longer elapsed time before a team started analysis (\emph{switch time} in the figure) predicted lower performance ($\beta=-.05, p<.05$), which suggested that teams should shorten the time of pure data modeling and start analysis earlier. Larger number of entities teams created also predicted higher performance ($\beta=.03, p<.05$). This can be interpreted that teams providing sufficient model input did benefit from system support. However, we are not ready to claim more entities are always better  because we should also be cautious that entities irrelevant to the team problem bear no value to team analysis, as discussed beforehand. Somewhat surprisingly, the number of shared entities negatively predicted performance ($\beta=-8.99, p<.05$). 
+%\bvh{hard to understand this sentence...not sure how to rewrite it.}
+We considered this might also relate to the issue of entity value: sharing entities without relevance to the team problem leads to reduced team efficiency and creates distraction, which in turn would lead to worse team performance. Another possibility is that teammates may not necessarily access all entities partners created. The theory of Transactive Memory \cite{Wegner1987} suggests that teammates do not have to know everything in the team but should know ``who knows what''. Individuals specialize in their own field (e.g. one specializes in event analysis while another in social relationship examination) and reach for collaborators when other knowledge is needed. In such case, common knowledge in shared entities would actually be redundant. Individuals do not need to access content of entities created by others, but only keep aware of the creator.
+
+\begin{figure}
+\centering
+\includegraphics[width=3.0000in]{img/team_analysis.jpg}
+\caption{The relationship between collaboration characteristics and team performance.\label{fig:regression}}
+\end{figure}
+

@@ -1,104 +1,81 @@
 \section{CAnalytics Features}\label{canalytics-features}
 
-\begin{figure*}
-\centering
-\includegraphics{./img/interface.png}
-\caption{CAnalytics user interface}
-\end{figure*}
 
-We developed a collaborative information analysis tool, CAnalytics, to
+%\bvh{I think that the biggest thing missing from here is an argument about *why* they tool has been built the way it is. This should really link up to the arguments that you made in the abstract/intro about dynamism and collaboration more explicitly.}
+
+As shown in Figure~\ref{fig:canalytics}, we developed a web application tool, \emph{CAnalytics} (standing for ``C-ollaborative Analytics''), to
 support teams of analysts in identifying, visualizing, integrating and
-assessing facts from multiple sources. The design is informed by our
-paper prototype studies, where we examined communication patterns and
-team's spontaneously created artifacts when teams were engaged in a
-complex crime scenario. We also take into account findings from
-empirical studies conducted by Chin et al. \autocite{Chin2009} and Kang
-and Stasko \autocite{Kang2011} when making design decisions.
+assessing facts from multiple sources. Two particular design objectives are 1) to build an integrated environment for intelligence analysis, and 2) to support collaboration with shared data and awareness functions. The design is informed by earlier
+paper prototype studies \cite{Borge2012, Carroll2013}, in which the researchers examined team's communication patterns and
+spontaneously created artifacts in a crime scenario. We also take into account findings from
+empirical studies conducted by Chin et al. \cite{Chin2009} and Kang
+and Stasko \cite{Kang2011} when making design decisions.
+%\bvh{I would mention the reasons why we built it again here as an organizing structure for introducing the features and how they relate to those two overriding goals of dynamism and collaboration - modified}
 
-CAnalytics supports evidence modeling through annotation. In the
+\paragraph{Coordinated multiple views for data modeling and analysis}
+
+To enable an integrated environment for different functionalities of analysis, CAnalytics employs a multiple-view interface, with each view in a floating, closable window. Views are coordinated and share the underlying data pool so that products of different activities are not fragmented. The following paragraphs describe features of each view.
+
+The \emph{document} view supports evidence modeling through annotation. In the
 document view users can select and highlight a snippet of text and
 annotate it as a type of entity such as a person, location, event, etc.,
-or as a relationship between entities. Unlike in other entity-based
-systems such as \autocites{Bier2010}{Stasko2008}, we use annotation to
+or as a relationship between entities. Unlike other entity-based
+systems such as \cite{Bier2010,Stasko2008}, we use annotations to
 allow analysts to manually create evidence objects of interest. Manual
-annotation allows for greater user control, allows more integrated
-source data objects to be identified, and avoids the user problems
-associated with automatic identification of disaggregated people,
-locations and times \autocite{Bier2008}. Users can decide their own
+annotation allows for greater user control in terms of 
 information of interest and granularity that best suits their ad-hoc
-analytic needs.
-
-Users can add attributes to the annotated object, e.g.~adding time
-attribute in an event, and placing coordinate in a location. Users can
+analytic needs. 
+%\bvh{I wouldn't make too big of a point out of not supporting automated analysis, I would instead put it as something to look at in future work. You are sort of calling out a whole couple of fields in this set of statements. - modified} 
+Users can add attributes to the annotated object, e.g.~time in an event, and coordinate in a location. Users can
 also make reference to other objects in the attribute; for example,
 users can add people objects to an event indicating that these people
-were involved in the event. In this case, a relationship between the
-people and the event is automatically created. Users can also explicitly
-create a relationship between two entities by selecting a source entity
-and a target entity and labeling the relation name.
+were involved in the event. 
+%\bvh{I almost think this is too fine grained of a description...you could just take the first sentence or two of this and add it to the previous paragraph. -deleted some}
 
-When users are explicitly creating an annotation, they are also
-implicitly creating a provenance of the modeled entity--- annotation
-records the source where a data object was created. As observed in
-Carroll et al.'s \autocite{Carroll2013} empirical study, while
-integrating information in a visual artifact helps sharing and pooling
-information with teammates, the action also removes problem information
-from its original context. Participants often forget what an entity
-refers to and why it is such positioned in an artifact. Entities in
-CAnalytics are linked back to the location of documents where they were
-created through annotation. Users can always re-access the data objects
-for provenance, a critical requirement emphasized by Chin et al.
-\autocite{Chin2009}.
-
-The data modeled through annotation is then displayed in multiple
-coordinated views in the same workspace, including table, timeline, map,
-and network graph---artifacts frequently constructed to hold attribute
-data, temporal data, spatial data and relational data respectively
-\autocite{Carroll2013}. Figure 2 shows an example of the tool interface:
+The data modeled through annotation is then displayed in visualizations in the same workspace, including \emph{table}, \emph{timeline}, \emph{map},
+and \emph{network} view---artifacts that are frequently constructed to hold attribute
+data, temporal data, spatial data and relational data respectively 
+%\bvh{not sure what point you are trying to make here}
+\cite{Carroll2013}. Figure~\ref{fig:canalytics} shows an example:
 when an annotation is created in the document view with information
 about time, location, participants, and their relationships, a new event
 is created in the timeline view, a new location is created in the map
 view, and new people are added to the network graph with a labeled edge
 representing the relationship (or new edges are added to existing
-nodes). Hovering mouse over an entity will activate an entity detail
+nodes). Hovering the mouse over an entity will activate an entity detail
 window that displays attributes in detail, and analysts can modify, or
 re-model the entity in situ.
 
-The views are coordinated and afford brushing and linking interaction;
-that is, when users apply a graphic filter in one view, related
-information is displayed in other views. Thus the analyst can retrieve
-entities within a time range using timeline filter, make a spatial query
-with map filter, or select a cluster of entities by drawing a filter
+The views afford brushing and linking interactions;
+that is, when users brush entities in one view, related
+entities are displayed in other views. Thus the analyst can narrow down 
+entities to their interest by: specifying a time range using the functionality provided on the timeline; making a spatial query
+with map filter; or selecting a cluster of entities by drawing a bounding 
 area in the network view.
 
-CAnalytics supports real-time collaborative editing, similar to the
-Google Tools. Users can open several concurrent editors to
-collaboratively edit multiple annotations. Annotations are immediately
-shared within a team and are automatically added to teammates' document
-views and other visualizations. More than Google Docs, CAnalytics supports the editing of more complex data
-structures than text, including spatial data, temporal data, and object
-attribute data.
+\paragraph{Collaboration and awareness features}
 
-In addition to real-time data sharing, CAnalytics is built in with
-several other awareness features, including a notification system, a
-feature we named ``tool coordinator'`, a message tool, and a history
-tool, and a collaborative editor. A notification system sends
-individual's actions to the team, in the form of a text box in the top
-right corner of the workspace. The tool coordinator is an iconic
-indicator on top of a tool window, suggesting who is working on the
-tool. The message tool is a real time chat window that enables team
+To support collaboration, CAnalytics affords real-time collaborative editing, similar to the
+Google Tools. Users can open several concurrent editors to
+collaboratively edit multiple entity objects. Entities and annotations are immediately
+shared within a team and rendered in teammates' corresponding views. 
+
+In addition to real-time data sharing, CAnalytics supports other awareness features. A \emph{notification system} sends
+individual's actions to the team in the form of a text box located in the top
+right corner of the workspace. An iconic
+indicator on top of a view window, which we call \emph{tool coordinator}, shows who else is also working on this view. A \emph{message} tool is a real time chat window that enables team
 communication with persistent message history. The system also maintains
-a traceable log of time-stamped individual activities in a history tool.
-Users can learn team activity about who did what to which object at
-when. Entities and relationships mentioned in the message tool and
-history tool are hyperlinks that will trigger pop-up detail window when
-being moused over. With these awareness features, users who work
-synchronously can be informed of others' activity continuingly; users
+a traceable log of time-stamped individual activities in the \emph{history} tool.
+Users can learn team activities about who did what to which object at
+what time. Entities mentioned in the message tool and
+history tool are hyperlinked and will trigger pop-up detail window when
+the user moves the mouse over them. With these awareness features, users who work
+synchronously can be informed of others' activity continuously; users
 who work asynchronously will be able to use the history to reconstruct
 their work status and become aware of changes beyond the point of their
 last interaction.
 
-We also included a simple notepad to support collaborative hypothesis
+We also included a \emph{notepad}, a collaborative text editing tool, to support hypothesis
 development. We integrated Etherpad \footnote{http://etherpad.org}, an
 open-source collaborative editor similar to Google Doc, for teams to
 compose their hypotheses. Users can insert tables (e.g.~an ACH matrix)
