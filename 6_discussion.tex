@@ -9,6 +9,20 @@ their design implications in our tool. The study also complements
 research that only tests tools in short term lab studies (e.g.
 \cite{Convertino2011,Goyal2016,Hajizadeh2013}) by investigating tool usage over multiple usage sessions.
 
+This study adopts an \emph{analyst-centered design} approach. A critical requirement of developing tools that meet user needs is to
+understand their needs and practices. When these needs and practices
+are specialized (as is the case in Intelligence Analysis), it is
+particularly important to include the target user population in
+the design process \cite{Scholtz2014}.
+Our classroom study provided an opportunity with deep
+access to analysts in training. These analysts have been trained
+with knowledge and skills of intelligence analysis, and have experience with state-of-the-art analytic
+tools such as Analyst's Notebook and PARC ACH. In their reflections, participants often compared CAnalytics to
+those tools. Their multi-session usage of CAnalytics also allows them to adapt to the tool and learn to appropriate it to the best of their team purpose \cite{Stahl2006}. Therefore, while their feedback is
+admittedly not the same as an experienced professional,
+their feedback does provide a deeper insight into strengths and
+weaknesses of CAnalytics.
+
 The study provides encouraging results on supporting collaboration in intelligence analysis.
 Participants appreciated an all-in-one environment where they could
 share raw documents, evidence snippets, views of evidence and hypotheses
@@ -17,120 +31,53 @@ simultaneously without blocking or interfering each other. Another
 benefit of the collaborative tool is to keep teammates aware of each
 other's activities. Staying aware of teammates not only helps establish a common ground for planning team strategy, but also ensure everyone is following the plan as expected. Moreover, results suggest the awareness features provide positive \emph{social facilitation} \cite{Zajonc1965}: individuals found the task motivating and engaging with awareness of each other's activity. We also measured collaboration characteristics that impacted team performance, and found that balanced contribution, peer editing, and earlier switching  from modeling to analysis predicted higher team performance.
 
-\paragraph{Analyst-centered design}
+\paragraph{Scaffold a structured interleaving workflow}
 
-A critical requirement of developing tools that meet user needs is to 
-understand their needs and practices. When these needs and practices
-are specialized (as is the case in Intelligence Analysis), it is 
-particularly important to include the target user population in 
-the design process. Intelligence analysis is a specialized,
- domain-specific task and it is important to understand analysts with domain knowledge, 
- learn their practice, and observe their react to tool features \cite{Scholtz2014}. 
- However, professional analysts are very hard to include 
- in a long-term design cycle due to confidentiality and security 
- issues. Our classroom study provided an opportunity with deep 
- access to analysts in training. These analysts have been trained 
- with knowledge and skills of intelligence analysis, and have experience with state-of-the-art analytic
-tools such as Analyst's Notebook and PARC ACH. In their reflections, participants often compared CAnalytics to
-those tools, as well as the different teamwork experiences. Therefore, while their feedback is
-admittedly not the same as an experienced professional,
-their feedback does provide a deeper insight into strengths and
-weaknesses of CAnalytics. In addition, the students are young learners
-that are willing to employ new work practices supported by features in
-tools. They are important parts of the future intelligence community. In
-some sense, their practice can be treated as a view into the future of
-practice of the community \cite{Martin2014}.
-
-Our study spanned multiple usage sessions.
-This allowed participants time to learn to adapt to team functions and to appropriate
-the tool to best serve their team purpose. Teams were able to explore different team strategies, and to
-make changes if they got stuck \cite{Stahl2006}. For example, we
-noticed that two teams decided to change the use of the tool halfway in
-their analysis. One team started with dividing work by case documents,
-but later decided members should annotate different entity types.
-Another team started with an accretion strategy by annotating all
-entities. Later they discovered that this strategy brought too much
-noise, and decided to clean out irrelevant entities (filtering
-strategy). Such change occurs as a consequence of increased awareness of
-team functions and tool capabilities, which takes time to develop.
-
-With deep access to these analysts, we are able to interpret and triangulate our data from multiple sources. We qualitatively analyzed participants' feedback to understand their first person experience, and corroborated them with surveys and interaction logs. The interaction logs provided us a detailed view into their analysis process, and allowed us to quantitatively characterize their team behavior. Finally, their analytic products, including the visual artifacts and team reports, helped us distinguish team outcomes.
-
-Yet classroom study also has limits. For example, many factors and
-variables could exist that affect team performance. The fact that these
-factors are often impossible to model or control adds to the difficulty
-in data analysis (e.g.~teammate absence). Also, data collection is
-challenging because team interactions are not always accessible. Teams
-can choose to work synchronously or asynchronously, and it is difficult
-to predict when or where the interaction of most interest is to occur.
-Verbal communication is not accessible, which could be useful to infer
-team awareness as a complement to interaction logs. Our work identifies
-both positive evidence and problematic situations, and propose potential
-solutions and possible hypotheses, yet rigorously evaluating these
-solutions and validating hypotheses is beyond this study. Lab studies
-and case studies can be conducted in the future to address these
-problems with greater control and deeper data access.
-
-\paragraph{Provide nuanced awareness for close collaboration}
-Our study suggests that tools play an important role in shaping, or at least supporting, user's
-behavior towards more collaborative behavior. With traditional
-single-user tools, students often employ a divide-and-conquer strategy;
-they divide their job by tools, work individually on separate tools, and
-compile the results together in the end. In our study, we observed many
-teams spontaneously conducted closer collaboration and enjoyed being
-able to contribute simultaneously. A potential problem with simultaneous
-contribution is duplicated or conflicted efforts. To minimize the
-problem, further nuanced awareness information of partner's action could be added. For example, Hajizadeh et al.
-\cite{Hajizadeh2013} revealed collaborator's action in a transparent color. We can visualize where the collaborator is making
-an annotation as an indicator of interest of that piece of text. This is
-like typing indicator bubbles in chatting tools (e.g.~Facebook
-Messenger) which provides awareness of actions currently being performed
-before outcome becomes visible.
-
-\paragraph{Enable an interleaving workflow}
 A misconception about information analysis is that data modeling and
 data analysis are two staged activities. This is akin to the \emph{waterfall}
 software development model, which features a sequential process that
 flows downwards through the phases of requirement conception, software
-design, software implementation, testing and maintenance. Critics have
-pointed out that the staged approach may not work properly, and an iterative design
-process is often required that leads to reframe user requirements,
+design and implementation, and testing and maintenance. Critics have
+argued against this approach and instead called for an iterative design
+process that leads to reframe user requirements,
 redesign, redevelopment, and retesting.
 
-Our result demonstrates a similar iterative and dynamic process in intelligence analysis. The result is striking especially because our participants have been trained with tools that impose a waterfall model. They could have followed their old waterfall practice with our tool, but instead all teams spontaneously switched to an iterative manner.
-Indeed, relying only on information that has already been modeled and
-delivered to analysts will probably not solve all analytical problems
-\cite{Heuer1999}. It will probably be necessary to look elsewhere
-than evidence already extracted, re-model the data, and dig for more
-information. Re-modeling of the data could
-lead to a totally different picture of a problem (e.g.~adding a link between
-two clusters changes the layout of the network, and thus framing of
-relationships between two robberies), leading to another analytic path. 
+Our result demonstrates a similar iterative and dynamic process in intelligence
+analysis. The result is striking especially because our participants have been
+trained with tools that impose a waterfall model. They could have followed their
+old waterfall practice with our tool, yet instead all teams spontaneously
+switched to an iterative manner. Our result also suggests that an earlier switch
+to analysis actually increases team performance. Realizing that, we probably
+could shape analysts into a more structured, interleaving workflow. The structured techniques such as IEW and ACH aim to scaffold analysts to a systematic approach to build models and validate hypotheses respectively. Similarly, the system can provide a scaffolding process to assist analysts in connecting data and analysis. For example, when user adds a new data object, the system could
+suggest possible connections to existing evidence, which is likely to help analysts discover new patterns. When a user creates a new hypothesis, the system could highlight associated evidence, which would prompt the analyst to re-examine the data and look for more data. Note though that this scaffolding should only provide a basic structure rather than imposing analysts a fixed workflow \cite{Kang2011}.
+
 
 \paragraph{Design a richer graphic language for uncertainty}
-We noted the importance of representing uncertainty. We observed teams
-in our study spontaneously employed two different approaches to deal
-with team uncertainty: either to mix them for better synthesis or to
-separate them for better clarification. We propose that a
-richer graphic language and interaction be designed so that analysts can
-encode uncertainty into the network view. For example, links and
-entities with different uncertainty can be visualized in different
-transparency. Users can \emph{filter} by uncertainty so that users can
-choose to have only facts to take into account or review all inferences.
 
-\paragraph{Make valuable contributions more visible}
+Teams need to be aware of not only the content of shared information, but also
+its uncertainty. Uncertainty is prevalent in team analysis because each teammate becomes a source of uncertainty when they contribute a piece of information. Teams in our study spontaneously employed two different approaches to
+deal with uncertainty: either to mix them for better synthesis or to
+separate them for better clarification. Representing uncertainty appropriately assures teammates when they build analysis upon other's insight. This helps reduce the problem emphasized in Chin et al.'s work \cite{Chin2009} that analysts do not trust partner's conclusion. We propose that a richer graphic
+language and interaction be designed so that analysts can encode uncertainty
+into the views. For example, links and entities with different
+uncertainty can be visualized in different transparency. Users can \emph{filter}
+by uncertainty so that users can choose to consider evidence only with high credibility, or to review
+all inferences and decide what extra data is needed to consolidate them.
+
+\paragraph{Distinguish visible vs. valuable contributions}
+
 We noted cases where teams created far more entities than needed
-with an accretion strategy. 
+with an accretion strategy.
 Strikingly, while similar data modeling strategy was reported in the paper prototype
 study \cite{Carroll2013}, users with CAnalytics seemed far more
 tempted to accretively add information, with far more entities and
-cluttered views. For example, the extreme team created as many as three times entities than the rest teams in our study, much more than difference in the paper prototype study. Why did this
+cluttered views. For example, the extreme team created as many as three times entities than the rest teams in our study, much more than the difference in the paper prototype study. Why did this
 happen? We guess both the context of classroom study and the system
 design contributed. Unlike in the lab study where teams are temporarily
 assembled, teams in a class evaluate peers either consciously or
 unconsciously and value how themselves are being evaluated. Such social
 pressure motivate individuals to make contributions, and indeed to make
-\emph{visible} contributions, more than valuable contributions. That is,
+\emph{visible} contributions, more than \emph{valuable} contributions. That is,
 participants noticed that their work activity was visible to their
 partners, and accordingly prioritized doing more visible work over doing
 less visible work. In some cases, this led to a new problem of easy and
@@ -144,31 +91,28 @@ making significant contributions more visible, or perhaps making it more
 immediately visible that less important contributions are indeed less
 important.
 
-\paragraph{Build collapsible views for multi-level analysis}
-
-Views could still get cluttered as data volume increases and analysts
-dig into event details (e.g.~representing suspect's all actions to
-identify patterns of common actions in two robberies). Indeed, analysts
-often engage in multi-level analysis in parallel, frequently
-coordinating among, say, confirmation of location of an event, to
-comparison of two events, to overviewing all events as a robbery as a
-whole. A possible design solution is to enable collapsible data views. A
-collapsible view can help analysts focus attention on a certain level of
-details at a time while conveniently switching between levels, and when
-in collaboration, draw teammate's attention to a specific item.
 
 \paragraph{Share views as team resource}
 
-An important improvement to make is to support view sharing, or
-sharing of intermediate analytic status. A common solution is to have a
-distinction of public view and private view \cite{Convertino2011,Greenberg1990}. However, a nuanced difference exists in intelligence analysis: a view is not useful if it does not demonstrate an insight. A public view is not always necessary, and when analysts do obtain an insight, they may share multiple views to support and contextualize the insight.
-We propose that views should be treated as a team
-\emph{resource}, just like data. Views as resource are sharable,
-extensible, and reusable. For example, an analyst can deliberatively save their view as a shared resource when
-they feel it appeals to collaborators. Other people can reuse the view
+View sharing is important for sharing and understanding analytic result \cite{Morton2014a}. A common solution is to enable a public view which always keeps synchronized for all teammates \cite{Convertino2011,Greenberg1990}. However, a single public view does not meet the need in intelligence analysis because analysts may want to share multiple views in an iterative analysis process.
+We propose that views should be treated as a
+\emph{team resource}, just like data, which is sharable,
+extensible, and reusable. For example, an analyst can save their current view as a shared resource when
+they feel it useful to collaborators. Other people can reuse the view
 to their need. Shared views should be interactive rather than static
 images, so that analysts can perform all interactions including
 filtering and highlighting, and are able to evolve the view with
 collective team efforts, a critical requirement emphasized in
 \cite{Carroll2013}.
 
+
+\paragraph{Build collapsible views for multi-level analysis}
+
+we observed that analysts
+frequently engaged in multi-level analysis,
+and coordinate among different levels of details. For example, analysts jumped quickly from digging into details of a single event, to
+comparing between two events, and to overviewing all robberies as a
+complete story. When sharing an insight that associate This brings challenges to information sharing because information should not only be delivered to partners but should also be represented at the right context so that partners could understand it in the right context. A collapsible data view could be a solution to accommodate such multi-level analysis. This can help draw teammate's attention to a specific item while keeping the global context available. Analysts can focus on a certain level of
+detail at a time while conveniently switching between levels. A collapsible view also reduces the problem of cluttered view when data volume increases, as some participants complained.  and when analysts
+dig into greater details (e.g.~representing suspect's all actions to
+identify patterns of common actions in two robberies). An analyst can overview all robberies and only unfold detailed actions when investigating into a specific robbery.

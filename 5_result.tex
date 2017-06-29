@@ -1,14 +1,25 @@
 \section{Results}\label{results}
 
+Teams had three most intensive working sessions over the week, although they
+could access the tool any time: two sessions were in class and one was outside
+class before the team report deadline. 22 teams self disclosed that they used
+CAnalytics as the principle analytic tool throughout the project although they
+were allowed to use others; one team reported that they mostly used Google Doc because they \emph{``felt more used to''}. Nine other teams reported having
+used Google Doc, but only for composing the final team
+report.
+Seven teams reported using
+GroupMe and other instant message outside class. They used these tools for
+instant communication and coordination of meeting. Thus the system logs captured most of team's analytic sessions, although their communication data could be partially missing.
+
 Over the week, teams created 1805 entities and 1529 relationships in
 total. The number of entities teams created ranged from 24 to 223 ($M=82,
 SD=39.9$), and the number of relationships ranged from 7 to 237 ($M=69.5,
 SD=51.0$), showing a large variety. The big range was related to different team data modeling strategy,
 which will be discussed in detail later. While teams could work on the project any time, we found three intensive usage sessions from the interaction log: two were in class and one was outside class, before the team report deadline.
 
-CAnalytics was generally well received by the students. An overview of 
+CAnalytics was generally well received by the students. An overview of
 the related survey items (shown in Figure~\ref{fig:survey}) shows that students positively rated all aspects
-of the tool except cognitive load, towards which they had a close to neutral feeling. % \bvh{provide more detail here, don't just rely on the figure} 
+of the tool except cognitive load, towards which they had a close to neutral feeling. % \bvh{provide more detail here, don't just rely on the figure}
 
 \begin{figure}
 \centering
@@ -66,7 +77,7 @@ encodes the number of switches. We see highly frequent transitions between data 
 
 \begin{figure}
 \centering
-\includegraphics[width=3.20000in]{./img/network_accretion_filter.png}
+\includegraphics[width=\columnwidth]{./img/network_accretion_filter.png}
 \caption{Network artifact comparison: filtering (a)
 vs.~accretion (b) \label{fig:network_accretion}}
 \end{figure}
@@ -88,7 +99,7 @@ to model all details and the produced artifact could be fairly complex.
 An example is Team 108, who modeled
 every step the suspects took, which resulted in far more entities (223) than
 the average (82) and more cluttered network view (Figure~\ref{fig:network_accretion}b). This accounted for the large range of entities created. Users also realized the problem. They reflected that they spent too
-much time in detail events, and many did not help their analysis at all: 
+much time in detail events, and many did not help their analysis at all:
 
 \begin{quote}
 \emph{I felt that after we were done annotating, we hadn't really accomplished
@@ -102,7 +113,7 @@ vs.~inference}\label{artifact-construction-fact-vs.inference}
 
 \begin{figure}
 \centering
-\includegraphics[width=3.20000in]{img/network_cluster.png}
+\includegraphics[width=\columnwidth]{img/network_cluster.png}
 \caption{Network artifact comparison: separate clusters (a)
 vs.~connected clusters (b). The parts highlighted in red squares in (b) are key
 evidence that connects clusters\label{fig:network_cluster}}
@@ -117,7 +128,7 @@ network analysis (as reflected from the log). We found a clear distinction among
 (Figure~\ref{fig:network_cluster}a). Nodes within a cluster are
 connected, representing information space of a robbery case; Nodes
 between clusters are nonetheless not connected, indicating each robbery
-is a self-contained case. However, these these teams did not miss the connections between robberies, as these teams still discussed these robbery connections in their report. 
+is a self-contained case. However, these these teams did not miss the connections between robberies, as these teams still discussed these robbery connections in their report.
 It turned out that these teams documented any possible relationships between
 robberies in the notepad tool as a list, separate from the network graph; that is, these teams distinguished information content and synthesized them in different artifacts.
 %\bvh{add something, but still not powerful enough yet -what does this have to do with anything? I think you need a sentence here saying what this means, you don't explain this until 2 paragraphs later}
@@ -163,16 +174,16 @@ awareness}\label{collaboration-and-awareness}
 
 
 One recurring theme in the subject feedback we collected was that the
-collaboration features were helpful for solving the problem. In the survey 
+collaboration features were helpful for solving the problem. In the survey
 88\% of the students positively rated their
 group awareness. Participants appreciated that the tool complemented
 traditional analytic tools, describing CAnalytics as Analyst's Notebook with real time
 synchronization features similarly to Google Docs, or described it as Google Doc with added visual analytics. To quote one participant,
 \emph{``CAnalytics is like an analysts notebook that multiple people
 could work on at once {[}\ldots{}and{]} an analysts version of a Google
-Doc'' (P65)}. 
+Doc'' (P65)}.
 
-Participants reflected that they could now contribute simultaneously 
+Participants reflected that they could now contribute simultaneously
 without concerns of interference and could
 have everything in one place instead of manually sharing documents via a
 cloud service.
@@ -200,24 +211,24 @@ see what you are doing creates a sense of accountability in terms of
 separating the work load. (P51)}
 \end{quote}
 
-The motivating effect of awareness might account for, at least partially, 
-the fact that teams were participating equally. We measured the equality of 
-participation in terms of number of created entities and time spent on 
-CAnalytics. We refer to Olson \cite{Olson2017} in calculating equality: one 
-minus the variance of proportions times 100 (for better readability). Thus 
-the score ranges from .67 (when only one person contributes in a three-member 
-team) to 1.00 (when everyone participated exactly equally), and higher 
-score indicates higher balanced participation. The resulted equality of 
-created entities and time was .96 and .99 in average respectively. This 
+The motivating effect of awareness might account for, at least partially,
+the fact that teams were participating equally. We measured the equality of
+participation in terms of number of created entities and time spent on
+CAnalytics. We refer to Olson \cite{Olson2017} in calculating equality: one
+minus the variance of proportions times 100 (for better readability). Thus
+the score ranges from .67 (when only one person contributes in a three-member
+team) to 1.00 (when everyone participated exactly equally), and higher
+score indicates higher balanced participation. The resulted equality of
+created entities and time was .96 and .99 in average respectively. This
 indicates participants contributed fairly evenly.
 
 Another repeated theme was the awareness features helped assure all teammates were executing
 the team plan. Participants reflected on their experience that a common
-team breakdown was misunderstanding of the team plan, and that they did 
-not realize the misunderstanding until everyone had spent significant efforts 
-finishing their ``perceived'' job. CAnalytics made plan execution assured 
-because they could always see where teammates were working and what they 
-were generating; and if anything unexpected happened, they could communicate 
+team breakdown was misunderstanding of the team plan, and that they did
+not realize the misunderstanding until everyone had spent significant efforts
+finishing their ``perceived'' job. CAnalytics made plan execution assured
+because they could always see where teammates were working and what they
+were generating; and if anything unexpected happened, they could communicate
 immediately rather than in the end of the project.
 
 Participants reported many other instances of awareness they realized
@@ -239,18 +250,18 @@ does not simply indicate tool usefulness, it suggests users were explicitly awar
 Students' positive feedback on awareness was further corroborated by
 interaction logs. For example, we measured the number of entities
 accessed by other collaborators. While data
-generated by users is automatically shared, it is up to collaborators 
+generated by users is automatically shared, it is up to collaborators
 whether to read/edit the shared information or ignore information altogether.
 The log showed that on average, 77.6\% of the created entities
-were \emph{read} by at least one other teammate. Further, We measured how 
-many entities were \emph{edited} by collaborators, a phenomenon we argue 
-requires higher awareness, because the collaborator must not only realize 
-the creation of the entity, but also understand its content. We 
-defined \emph{peer editing}, manipulated as the ratio of editing other's 
-entities over editing those created by oneself. We found that all teams 
-edited collaborator's entity objects, with a peer editing value equal 
-to .83 ($SD=.45$). The result suggests that teams had little difficulty 
-accessing and modifying partner's created data objects.  
+were \emph{read} by at least one other teammate. Further, We measured how
+many entities were \emph{edited} by collaborators, a phenomenon we argue
+requires higher awareness, because the collaborator must not only realize
+the creation of the entity, but also understand its content. We
+defined \emph{peer editing}, manipulated as the ratio of editing other's
+entities over editing those created by oneself. We found that all teams
+edited collaborator's entity objects, with a peer editing value equal
+to .83 ($SD=.45$). The result suggests that teams had little difficulty
+accessing and modifying partner's created data objects.
 
 %/bvh{I don't understand this paragraph...what are you trying to say...that they would like to have a shared space?}
 One major critique is the lack of support for sharing intermediate analytic
@@ -282,7 +293,7 @@ Four teams followed an \emph{entity-based collaboration} (EBC)
 strategy. Instead of dividing by documents, they divided work by entity
 types: each individual went through all documents but only annotated
 entities of certain types, e.g.~teammate A only annotated persons and
-teammate B annotated locations (as shown in 
+teammate B annotated locations (as shown in
 Figure~\ref{fig:labor_division}b). This strategy seems to save teammate's time in the
 data modeling phase. And since each person focuses only on certain entities,
 they are more likely to identify recurring patterns, for example, the
@@ -290,9 +301,9 @@ white van used in multiple robberies. However, focusing on certain
 entities could lead individuals to superficial syntactic scanning of
 documents instead of deep reading. This could further lead to extremes
 of annotating all entities of the type, whether they are related to the
-problem at hand or not, similar issues with accretion strategy discussed 
+problem at hand or not, similar issues with accretion strategy discussed
 beforehand. Indeed we found from the interaction log that EBC teams
-created more entities ($M=101$) in average than DBC teams ($M=94.5$). 
+created more entities ($M=101$) in average than DBC teams ($M=94.5$).
 Moreover, with emphasis on certain entities,
 individuals are likely to know only partial aspects of a robbery and
 hence have difficulty connecting and synthesizing facts to deduce any
@@ -306,8 +317,8 @@ patterns. Indeed, teams did not necessarily have to divide their work in
 order to collaborate, especially when the collaborative tool provides
 possibility to work closely together. Teammates could read and annotate
 the same document because they could see new annotations by others in
-real time and build on other's annotation. Figure~\ref{fig:close_collaboration} 
-shows an example where one team worked on the same document simultaneously. 
+real time and build on other's annotation. Figure~\ref{fig:close_collaboration}
+shows an example where one team worked on the same document simultaneously.
 The three team members exhibited high synchronicity in which document to
 analyze, which we believe was not by accident. This has the advantage that
 teammates are always on the same page and can discuss hypotheses
@@ -341,17 +352,17 @@ simultaneously.\label{fig:close_collaboration}}
 
 \subsection{Interaction with team performance}
 
-To systematically evaluate factors that influenced team performance, 
-we conducted a multiple linear regression between team performance 
-as the dependent variable and team collaboration characteristics 
-(i.e.~equality of entities and time respectively, peer editing, number of entities created, shared 
-entities, switch time from data modeling to analysis) as independent 
-variables. We treated a team as a system \cite{Henman2003b} and modeled team-level 
-relationships. 
-The relationship of individual level variables (e.g. 
+To systematically evaluate factors that influenced team performance,
+we conducted a multiple linear regression between team performance
+as the dependent variable and team collaboration characteristics
+(i.e.~equality of entities and time respectively, peer editing, number of entities created, shared
+entities, switch time from data modeling to analysis) as independent
+variables. We treated a team as a system \cite{Henman2003b} and modeled team-level
+relationships.
+The relationship of individual level variables (e.g.
 survey items) could not be simulated with regression directly because data within a team was interdependent. The analysis was performed using \emph{R} \cite{R2016}.
 
-The result is shown in Figure~\ref{fig:regression}. The regression model was found to be statistically significant ($F(5,16)=4.58; p<.01$), with an R squared equal to .59, meaning 59\% of the variability in team performance was explained by the model. Five team-level variables contributed significantly to prediction of team performance. The model suggested that balanced contribution of entities predicted higher team performance scores ($\beta=45.79, p<.05$), but balanced participation time did not show such effect. More peer editing led to better performance ($\beta=3.89, p<.01$), implying that analysts should be encouraged to model data as a team, and to remodel other's entity objects as needed. Longer elapsed time before a team started analysis (\emph{switch time} in the figure) predicted lower performance ($\beta=-.05, p<.05$), which suggested that teams should shorten the time of pure data modeling and start analysis earlier. Larger number of entities teams created also predicted higher performance ($\beta=.03, p<.05$). This can be interpreted that teams providing sufficient model input did benefit from system support. However, we are not ready to claim more entities are always better  because we should also be cautious that entities irrelevant to the team problem bear no value to team analysis, as discussed beforehand. Somewhat surprisingly, the number of shared entities negatively predicted performance ($\beta=-8.99, p<.05$). 
+The result is shown in Figure~\ref{fig:regression}. The regression model was found to be statistically significant ($F(5,16)=4.58; p<.01$), with an R squared equal to .59, meaning 59\% of the variability in team performance was explained by the model. Five team-level variables contributed significantly to prediction of team performance. The model suggested that balanced contribution of entities predicted higher team performance scores ($\beta=45.79, p<.05$), but balanced participation time did not show such effect. More peer editing led to better performance ($\beta=3.89, p<.01$), implying that analysts should be encouraged to model data as a team, and to remodel other's entity objects as needed. Longer elapsed time before a team started analysis (\emph{switch time} in the figure) predicted lower performance ($\beta=-.05, p<.05$), which suggested that teams should shorten the time of pure data modeling and start analysis earlier. Larger number of entities teams created also predicted higher performance ($\beta=.03, p<.05$). This can be interpreted that teams providing sufficient model input did benefit from system support. However, we are not ready to claim more entities are always better  because we should also be cautious that entities irrelevant to the team problem bear no value to team analysis, as discussed beforehand. Somewhat surprisingly, the number of shared entities negatively predicted performance ($\beta=-8.99, p<.05$).
 %\bvh{hard to understand this sentence...not sure how to rewrite it.}
 We considered this might also relate to the issue of entity value: sharing entities without relevance to the team problem leads to reduced team efficiency and creates distraction, which in turn would lead to worse team performance. Another possibility is that teammates may not necessarily access all entities partners created. The theory of Transactive Memory \cite{Wegner1987} suggests that teammates do not have to know everything in the team but should know ``who knows what''. Individuals specialize in their own field (e.g. one specializes in event analysis while another in social relationship examination) and reach for collaborators when other knowledge is needed. In such case, common knowledge in shared entities would actually be redundant. Individuals do not need to access content of entities created by others, but only keep aware of the creator.
 
@@ -360,4 +371,3 @@ We considered this might also relate to the issue of entity value: sharing entit
 \includegraphics[width=3.0000in]{img/team_analysis.jpg}
 \caption{The relationship between collaboration characteristics and team performance.\label{fig:regression}}
 \end{figure}
-

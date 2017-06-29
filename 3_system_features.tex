@@ -16,25 +16,25 @@ and Stasko \cite{Kang2011} when making design decisions.
 
 To enable an integrated environment for different functionalities of analysis, CAnalytics employs a multiple-view interface, with each view in a floating, closable window. Views are coordinated and share the underlying data pool so that products of different activities are not fragmented. The following paragraphs describe features of each view.
 
-The \emph{document} view supports evidence modeling through annotation. In the
+The \emph{document} view supports evidence modeling through annotation. Similar to IEW, the system provides a basic structure to assist analysts in containing and framing new data. In the
 document view users can select and highlight a snippet of text and
 annotate it as a type of entity such as a person, location, event, etc.,
 or as a relationship between entities. Unlike other entity-based
 systems such as \cite{Bier2010,Stasko2008}, we use annotations to
 allow analysts to manually create evidence objects of interest. Manual
-annotation allows for greater user control in terms of 
+annotation allows for greater user control in terms of
 information of interest and granularity that best suits their ad-hoc
-analytic needs. 
-%\bvh{I wouldn't make too big of a point out of not supporting automated analysis, I would instead put it as something to look at in future work. You are sort of calling out a whole couple of fields in this set of statements. - modified} 
+analytic needs.
+%\bvh{I wouldn't make too big of a point out of not supporting automated analysis, I would instead put it as something to look at in future work. You are sort of calling out a whole couple of fields in this set of statements. - modified}
 Users can add attributes to the annotated object, e.g.~time in an event, and coordinate in a location. Users can
 also make reference to other objects in the attribute; for example,
 users can add people objects to an event indicating that these people
-were involved in the event. 
+were involved in the event.
 %\bvh{I almost think this is too fine grained of a description...you could just take the first sentence or two of this and add it to the previous paragraph. -deleted some}
 
-The data modeled through annotation is then displayed in visualizations in the same workspace, including \emph{table}, \emph{timeline}, \emph{map},
+These annotations turn text into structured data objects, which are then displayed in visualizations in the same workspace, including \emph{table}, \emph{timeline}, \emph{map},
 and \emph{network} view---artifacts that are frequently constructed to hold attribute
-data, temporal data, spatial data and relational data respectively 
+data, temporal data, spatial data and relational data respectively
 %\bvh{not sure what point you are trying to make here}
 \cite{Carroll2013}. Figure~\ref{fig:canalytics} shows an example:
 when an annotation is created in the document view with information
@@ -48,9 +48,9 @@ re-model the entity in situ.
 
 The views afford brushing and linking interactions;
 that is, when users brush entities in one view, related
-entities are displayed in other views. Thus the analyst can narrow down 
+entities are displayed in other views. Thus the analyst can narrow down
 entities to their interest by: specifying a time range using the functionality provided on the timeline; making a spatial query
-with map filter; or selecting a cluster of entities by drawing a bounding 
+with map filter; or selecting a cluster of entities by drawing a bounding
 area in the network view.
 
 \paragraph{Collaboration and awareness features}
@@ -58,7 +58,7 @@ area in the network view.
 To support collaboration, CAnalytics affords real-time collaborative editing, similar to the
 Google Tools. Users can open several concurrent editors to
 collaboratively edit multiple entity objects. Entities and annotations are immediately
-shared within a team and rendered in teammates' corresponding views. 
+shared within a team and rendered in teammates' corresponding views.
 
 In addition to real-time data sharing, CAnalytics supports other awareness features. A \emph{notification system} sends
 individual's actions to the team in the form of a text box located in the top
