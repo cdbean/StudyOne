@@ -1,15 +1,16 @@
 \section{Results}\label{results}
 
-Teams had three most intensive working sessions over the week, although they
-could access the tool any time: two sessions were in class and one was outside
+While participants could access the tool any time, teams had three most
+intensive usage sessions over the week: two were in class and one was outside
 class before the team report deadline. 22 teams self disclosed that they used
 CAnalytics as the principle analytic tool throughout the project although they
-were allowed to use others; one team reported that they mostly used Google Doc because they \emph{``felt more used to''}. Nine other teams reported having
-used Google Doc, but only for composing the final team
-report.
-Seven teams reported using
-GroupMe and other instant message outside class. They used these tools for
-instant communication and coordination of meeting. Thus the system logs captured most of team's analytic sessions, although their communication data could be partially missing.
+were free to use others; one team reported that they mostly used Google Doc
+because they \emph{``felt more used to''}. Nine other teams reported having used
+Google Doc, but only for composing the final team report. Seven teams reported
+using GroupMe and other instant message outside class. They used these tools for
+instant communication and coordination of meeting. Thus the CAnalytics system logs captured
+most of team's analytic sessions, although their communication data could be
+partially missing.
 
 Over the week, teams created 1805 entities and 1529 relationships in
 total. The number of entities teams created ranged from 24 to 223 ($M=82,
@@ -62,6 +63,8 @@ confirms our design expectation that data modeling and analysis should
 not be supported as separate staged activities, and that an integrated
 environment should streamline the workflow.
 
+After confirming the existence of interleaving workflow, we explored further what drives the switching between data modeling and analysis. We looked into team behavior in modeling and analysis respectively through log analysis and artifact analysis.
+
 \begin{figure*}
 \centering
 \includegraphics[width=6.5in]{./img/intertwined.jpg}
@@ -83,23 +86,26 @@ vs.~accretion (b) \label{fig:network_accretion}}
 \end{figure}
 
 We noted a distinction between filtering and accretion
-strategies in data modeling, similar to what was reported in the paper prototype study \cite{Carroll2013}. Filtering is selectively modeling of data
+strategies in data modeling, similar to what was reported in a paper prototype study \cite{Carroll2013}. Filtering is selectively modeling of data
 and adding to an artifact. Users must decide what information is
 relevant, and thus what is to be excluded, as well as what granularity
 of information is to model. Filtering requires more team coordination,
 because teammates must reach a common ground of the current problem as
-well as information needed to answer the problem. Figure~\ref{fig:network_accretion}a is an example of network built with filtering strategy. It only represented key information of robberies.
+well as information needed to answer the problem. Figure~\ref{fig:network_accretion}a is an example of network built with filtering strategy. It only represented key information of robberies and thus provides a good overview of the whole story.
 
-Accretion is an attempt to comprehensively represent the problem by
-adding all information to an artifact. Users extract every fact from the
-document, regardless of its immediate relevance to the problem.
-Accretion requires less coordination as it is relatively mechanical note
-taking. A disadvantage of accretion is that it can be time consuming
-to model all details and the produced artifact could be fairly complex.
-An example is Team 108, who modeled
-every step the suspects took, which resulted in far more entities (223) than
-the average (82) and more cluttered network view (Figure~\ref{fig:network_accretion}b). This accounted for the large range of entities created. Users also realized the problem. They reflected that they spent too
-much time in detail events, and many did not help their analysis at all:
+Accretion is an attempt to comprehensively represent the problem by adding
+information of all levels of details to an artifact. Users extract every fact
+from the document, regardless of its immediate relevance to the problem.
+Accretion requires less coordination as it is relatively mechanical note taking.
+A disadvantage of accretion is that the produced artifact could be fairly
+complex. An example is Team 108, who modeled every step the suspects took in a
+robbery. Such artifact provides a detailed view of the data, and can be useful
+when a step-by-step comparison is needed to identify robbery patterns. Yet it
+also resulted in far more entities (223) than the average (82) and more
+cluttered network view (Figure~\ref{fig:network_accretion}b). This accounted for
+the large range of entities created across teams mentioned beforehand.
+Participants also realized the problem. They reflected that they spent too much
+time in detail events, and many did not help their analysis at all:
 
 \begin{quote}
 \emph{I felt that after we were done annotating, we hadn't really accomplished
@@ -107,6 +113,8 @@ anything and that we were no closer to solving the case than when we had
 started. In the end it didn't really help that we had annotated the
 data. (P86)}
 \end{quote}
+
+Filtering and accretion strategies are not exclusive; in fact many teams applied a mix of two strategies. While filtering tends to provide an overview, accretion provides a detailed view. Modeling data in different granularities leads to analysis on different levels. 
 
 \subsection{Artifact analysis: fact
 vs.~inference}\label{artifact-construction-fact-vs.inference}
@@ -148,7 +156,7 @@ By comparing these two types of networks, we found that links within a cluster w
 witnessed at a location), and links between clusters were often
 \emph{inferences} beyond literally documented (e.g.~a white van at location A
 is the same van witnessed at location B). Teams creating separate
-clusters represented only facts in the network and held evidence of
+clusters represented only facts in the network and held evidence with
 uncertainty in a separate artifact. One advantage of distinguishing
 facts and inferences is that teams can always be aware of assumptions made when
 making a conclusion. And since all inferences are held in one place,
@@ -160,7 +168,6 @@ scattered in different artifacts.
 % place table simply for paper layout
 \input{./awareness_table}
 
-
 On the contrary, in connected-cluster networks, facts and inferences overlaid in one artifact together drive the layout of the
 network, are better synthesized, and give analysts a clearer picture in one place. Teams may discuss and evaluate the level of uncertainty of inferences to decide whether to add them to the
 network. This strategy makes analysis more interactive among teammates:
@@ -169,9 +176,10 @@ validity of inferences. However, a problem with mixing facts and inferences is, 
 link is factual or inferred, and ask whether conclusion derived
 from the visualization can be trusted under uncertainty.
 
+Uncertainty in analysis represents a gap between analyst's knowledge and data needed to address the problem. The existence of uncertainty drives analysts to switch data modeling and discover more data or remodel existing data in order to reduce data uncertainty.
+
 \subsection{Collaboration and
 awareness}\label{collaboration-and-awareness}
-
 
 One recurring theme in the subject feedback we collected was that the
 collaboration features were helpful for solving the problem. In the survey

@@ -46,11 +46,44 @@ Our result demonstrates a similar iterative and dynamic process in intelligence
 analysis. The result is striking especially because our participants have been
 trained with tools that impose a waterfall model. They could have followed their
 old waterfall practice with our tool, yet instead all teams spontaneously
-switched to an iterative manner. Our result also suggests that an earlier switch
-to analysis actually increases team performance. Realizing that, we probably
-could shape analysts into a more structured, interleaving workflow. The structured techniques such as IEW and ACH aim to scaffold analysts to a systematic approach to build models and validate hypotheses respectively. Similarly, the system can provide a scaffolding process to assist analysts in connecting data and analysis. For example, when user adds a new data object, the system could
-suggest possible connections to existing evidence, which is likely to help analysts discover new patterns. When a user creates a new hypothesis, the system could highlight associated evidence, which would prompt the analyst to re-examine the data and look for more data. Note though that this scaffolding should only provide a basic structure rather than imposing analysts a fixed workflow \cite{Kang2011}.
+switched to an iterative manner. We looked into specific behavior in data modeling and analysis. We projected that modeling on multiple granularities drives analysis on different levels, and uncertainty in analysis pushes analysts back to collecting additional data.
 
+Realizing that, we probably could shape analysts into a more interleaving
+workflow with a more structured approach. Techniques such as IEW aim to provide
+a structure for evidence modeling, and ACH scaffolds analysts to follow a
+structured approach to evaluate analytic hypotheses, yet the way to switch
+between the two activities is largely undefined \cite{Kang2011}. We could build
+a similar scaffolding process to assist analysts in connecting data and
+analysis, based on the modeling granularity and analytic uncertainty. For
+example, when user adds a new data object, the system could suggest possible
+connections to existing evidence in the context of an appropriate level of
+views, which is likely to help analysts discover new patterns. When a user
+creates a new hypothesis with uncertainty, the system could highlight associated
+evidence, which would prompt the analyst to re-examine the data and look for
+more data. Such scaffolding provides a basic structure to link stages of
+analytic activities that analysts can take on without imposing a specific fixed
+workflow.
+
+A smoothier interleaving workflow could also be made by increasing team awareness of partner's modeling and analysis. That is, when one marks an insight as uncertain, the partner being aware could switch to modeling to resolve it; similarly, one's modeling could influence and drive partner's analysis. Such ``team-level'' interleaving requires support of higher awareness, especially of hypothesis uncertainty and data model context, and could make teamwork more interactive and close coupling. We did observe in our study close coupling collaboration. Improved design for multi-granularity modeling, uncertainty representation, as well as team awareness of these features opens up possibilities for coordinating interleaving at the team level. We discuss these design implications in detail in the following paragraphs.
+
+\paragraph{Build collapsible views for multi-level analysis}
+
+we observed that analysts frequently engaged in multi-level analysis, and
+coordinate among different levels of details. For example, analysts jumped
+quickly from digging into details of a single event, to comparing between two
+events, and to overviewing all robberies as a complete story. When sharing an
+insight that associate This brings challenges to information sharing because
+information should not only be delivered to partners but should also be
+represented at the right context so that partners could understand it in the
+right context. A collapsible data view could be a solution to accommodate such
+multi-level analysis. This can help draw teammate's attention to a specific item
+while keeping the global context available. Analysts can focus on a certain
+level of detail at a time while conveniently switching between levels. A
+collapsible view also reduces the problem of cluttered view when data volume
+increases, as some participants complained.  and when analysts dig into greater
+details (e.g.~representing suspect's all actions to identify patterns of common
+actions in two robberies). An analyst can overview all robberies and only unfold
+detailed actions when investigating into a specific robbery.
 
 \paragraph{Design a richer graphic language for uncertainty}
 
@@ -91,7 +124,6 @@ making significant contributions more visible, or perhaps making it more
 immediately visible that less important contributions are indeed less
 important.
 
-
 \paragraph{Share views as team resource}
 
 View sharing is important for sharing and understanding analytic result \cite{Morton2014a}. A common solution is to enable a public view which always keeps synchronized for all teammates \cite{Convertino2011,Greenberg1990}. However, a single public view does not meet the need in intelligence analysis because analysts may want to share multiple views in an iterative analysis process.
@@ -104,15 +136,3 @@ images, so that analysts can perform all interactions including
 filtering and highlighting, and are able to evolve the view with
 collective team efforts, a critical requirement emphasized in
 \cite{Carroll2013}.
-
-
-\paragraph{Build collapsible views for multi-level analysis}
-
-we observed that analysts
-frequently engaged in multi-level analysis,
-and coordinate among different levels of details. For example, analysts jumped quickly from digging into details of a single event, to
-comparing between two events, and to overviewing all robberies as a
-complete story. When sharing an insight that associate This brings challenges to information sharing because information should not only be delivered to partners but should also be represented at the right context so that partners could understand it in the right context. A collapsible data view could be a solution to accommodate such multi-level analysis. This can help draw teammate's attention to a specific item while keeping the global context available. Analysts can focus on a certain level of
-detail at a time while conveniently switching between levels. A collapsible view also reduces the problem of cluttered view when data volume increases, as some participants complained.  and when analysts
-dig into greater details (e.g.~representing suspect's all actions to
-identify patterns of common actions in two robberies). An analyst can overview all robberies and only unfold detailed actions when investigating into a specific robbery.
