@@ -16,7 +16,7 @@ Over the week, teams created 1805 entities and 1529 relationships in
 total. The number of entities teams created ranged from 24 to 223 ($M=82,
 SD=39.9$), and the number of relationships ranged from 7 to 237 ($M=69.5,
 SD=51.0$), showing a large variety. The big range was related to different team data modeling strategy,
-which will be discussed in detail later. While teams could work on the project any time, we found three intensive usage sessions from the interaction log: two were in class and one was outside class, before the team report deadline.
+which will be discussed in detail later.
 
 CAnalytics was generally well received by the students. An overview of
 the related survey items (shown in Figure~\ref{fig:survey}) shows that students positively rated all aspects
@@ -63,7 +63,7 @@ confirms our design expectation that data modeling and analysis should
 not be supported as separate staged activities, and that an integrated
 environment should streamline the workflow.
 
-After confirming the existence of interleaving workflow, we explored further what drives the switching between data modeling and analysis. We looked into team behavior in modeling and analysis respectively through log analysis and artifact analysis.
+After confirming the existence of interleaving workflow, we explored further what drives the switching between data modeling and analysis. We looked into team behavior in modeling and analysis respectively through log analysis and artifact analysis, and describe the results below.
 
 \begin{figure*}
 \centering
@@ -114,7 +114,7 @@ started. In the end it didn't really help that we had annotated the
 data. (P86)}
 \end{quote}
 
-Filtering and accretion strategies are not exclusive; in fact many teams applied a mix of two strategies. While filtering tends to provide an overview, accretion provides a detailed view. Modeling data in different granularities leads to analysis on different levels. 
+Filtering and accretion strategies are not exclusive; in fact many teams applied a mix of two strategies. Depending on the need of analysis, filtering provides an overview of the whole story, and accretion helps investigate a specific robbery in detail. Modeling data at different levels opens different analytic threads, which accommodates multilevel analysis, including examining attributes of an individual entity, comparing two related events, and developing a hypothesized story on the whole dataset.
 
 \subsection{Artifact analysis: fact
 vs.~inference}\label{artifact-construction-fact-vs.inference}
@@ -176,7 +176,7 @@ validity of inferences. However, a problem with mixing facts and inferences is, 
 link is factual or inferred, and ask whether conclusion derived
 from the visualization can be trusted under uncertainty.
 
-Uncertainty in analysis represents a gap between analyst's knowledge and data needed to address the problem. The existence of uncertainty drives analysts to switch data modeling and discover more data or remodel existing data in order to reduce data uncertainty.
+Uncertainty in analysis represents a gap between analyst's knowledge and data needed to address the problem. The existence of uncertainty drives analysts to switch to data modeling and to collect more data or remodel existing evidence in order to resolve the uncertainty.
 
 \subsection{Collaboration and
 awareness}\label{collaboration-and-awareness}

@@ -1,42 +1,42 @@
 \section{Introduction}\label{introduction}
 
-Intelligence analysis is a form of sensemaking wherein a team of analysts
+Collaborative information analysis is a form of sensemaking wherein a team of analysts
 identify and evaluate causal relationships in a complex corpus of documents. A
-common example of such an analysis is the investigation of a crime, where a variety of putative facts are assembled, e.g.
+common example of such an analysis is intelligence analysis, where a variety of putative facts are assembled, e.g.
 financial records, witness observations and interviews, and the social
 connections between persons of interest. Armed with these different assembled facts
  investigators collaboratively: assess means, motives,
 and opportunities; articulate and investigate further hypotheses and deductions;
-and develop one or more theories of the crime.
+and develop one or more theories of the crime. Other examples include business intelligence, scientific research, social constructivist learning, etc.
 
 %\bvh{Outline the critical challenge of modeling data and basing hypotheses on
 % it. Current tooling forces you into waterfall.} \bvh{I would say the waterfall
 % point first, and be more explicit about how it forces you into that model.}
 
-According to Pirolli and Card's model \cite{Pirolli2005}, intelligence analysis
+According to Pirolli and Card's model \cite{Pirolli2005}, information analysis
 starts with modeling data from textual documents, followed by representing these
 data models in various information artifacts, and developing them into
-hypotheses.  Systems that currently support intelligence analysis are aimed at a
+hypotheses.  Systems that currently support information analysis are aimed at a
 single phase and therefore only support part of the overall analysis workflow.
 This imposes a clear boundary between each of these phases on the analysts. For
- assumes that data has
-been modeled, and that relevant evidence can be adduced appropriately to various
-hypotheses, but provides no structured support for either. Other techniques,
- structure evidence
-modeling, but do not extend utilization of evidence to hypothesis generation.
-The unintended boundary between phases has the consequence that data modeled in
-one software cannot be effectively utilized in hypothesis development in another
-system. And analysts have to handoff, often via replicating the data in the new
-system, information between software systems, making it difficult to revisit and
-revise the data model. We therefore are motivated to develop an integrated
-workspace in which analysts can model and analyze data in one place, and we
-utilize the system as an experimental instrument to investigate analytic
-behavior afforded by such integration.
+example, Analysis of Competing Hypotheses (ACH) assumes
+that data has been modeled, and that relevant evidence can be adduced
+appropriately to various hypotheses, but provides no structured support for
+either. Other techniques, such as Information Extraction and Weighting (IEW),
+help structure evidence modeling, but do not extend utilization of evidence to
+hypothesis generation. The unintended boundary between phases has the
+consequence that data modeled in one software cannot be effectively utilized in
+hypothesis development in another system. And analysts have to handoff, often
+via replicating the data in the new system, information between software
+systems, making it difficult to revisit and revise the data model. We therefore
+are motivated to develop an integrated workspace in which analysts can model and
+analyze data in one place, and we utilize the system as an experimental
+instrument to investigate analytic behavior afforded by such integration.
 
 % \bvh{Talk about how it is collaborative.} \bvh{Although I get lost in what you
 % are trying to do in the end of this paragraph...I am not sure what point you are
 % trying to make. This is the most confusing part of the intro so far}
-Any intelligence analysis activity, at least at a non-trivial scale, is
+Any information analysis activity, at least at a non-trivial scale, is
 fundamentally collaborative \cite{Convertino2011}. The intelligence community
 puts great value on collaboration. A report from the Director of National
 Intelligence, \emph{Vision 2015},  called for \emph{``a dramatic shift from
@@ -49,19 +49,19 @@ serious support for analytics, for team coordination \cite{Treverton2016}. Thus,
 analysts must coordinate their work outside of their tool support, manually
 sharing their analytic products.
 
-Supporting collaboration in intelligence analysis is challenging, and perhaps
-more than other situations (e.g.~collaborative writing, wiki) because the task
+Supporting collaboration in information analysis is challenging, and perhaps
+more than in other situations (e.g.~collaborative writing, wiki) because the task
 itself can be extremely complex. A team could be working with much more complex
 data structure (e.g.~spatial data, temporal data, and relational data, as
 opposed to text only), coordinating through multiple analytic artifacts
 (e.g.~visualizations as opposed to document only), and making
 sense of different levels of analysis, assumptions, and hypotheses, both
 synchronously and asynchronously throughout a long-term course of collaborative
-interaction. Thus teams must not only stay aware of what other members are doing, but \emph{why} they are doing that in a specific context of analysis. This study aims to investigate how technology can mediate team collaboration and to understand what awareness is needed beyond team actions.
+interaction. Thus teams must not only stay aware of what other members are doing, but \emph{why} they are doing that in a specific context of analysis. This study aims to investigate how technology can mediate team analysis and to understand what awareness is needed beyond team actions.
 
 %\bvh{Talk about what we did, this makes sense.}
-We performed our study within the context of an intelligence analysis course.
-This classroom study provides a natural environment in which participants engage
+This paper reports specifically on a collaborative information analysis task situated in the intelligence domain, one of the most complex information analysis areas. We performed our study in an intelligence analysis course.
+A classroom study provides a natural environment in which participants engage
 in multi-session, relatively complex class projects. Due to the difficulty in
 accessing professional analysts due to security and confidentiality issues,
 studying \emph{analysts-in-training} provides us a chance to include them in a
@@ -73,16 +73,13 @@ important parts of the future intelligence community. In some sense, their
 practice can be treated as a view into the future of practice of the community
 \cite{Martin2014}.
 
-We are thus motivated to investigate the feasibility, effectiveness and
-consequence of supporting collaborative intelligence analysis in the context of
-classroom study. We have developed a tool that includes annotation for data
-modeling, interactive visualization for data analysis, and collaboration
-features. While this paper reports a collaborative task in a specific domain,
-findings regarding team process and breakdowns meet the interest of the broader
-CSCW community. This study makes three contributions: 1) we observed a
-spontaneously adopted interleaving workflow and quantitatively proved that an
-earlier switch from modeling to analysis improved performance; 2) we
-distinguished three collaboration strategies, five factors that impacted
-performance, and issues that caused team breakdown; and 3) we explored further
-the design of awareness support and proposed awareness surpasses simply teams
-actions but includes contribution value, uncertainty, and context of insight.
+We have developed a tool that includes annotation for data modeling, interactive
+visualization for data analysis, and collaboration features. While this paper
+reports a collaborative task in a specific domain, findings regarding team
+process and breakdowns meet the interest of the broader CSCW community. This
+study makes three contributions: 1) we observed a spontaneously adopted
+interleaving workflow and characterized how such interleaving occurred as well
+as its consequence; 2) we distinguished three labor division strategies teams
+employed with our collaboration support, and our results implied that a more
+interleaving workflow could be enabled by awareness of uncertainty, context of
+insight, and contribution value.
