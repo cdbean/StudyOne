@@ -1,44 +1,50 @@
 \section{Discussion}\label{discussion}
 
-The goal of the study is to explore design opportunities to support
-collaboration in information analysis by evaluating tool usage in a natural
-environment over multiple usage sessions. Our work builds upon prior
-empirical studies (e.g.
-\cite{Carroll2013,Borge2012,Kang2011,Chin2009}) and embodies
-their design implications in our tool. The study also complements
-research that only tests tools in short term lab studies (e.g.
-\cite{Convertino2011,Goyal2016,Hajizadeh2013}) by investigating tool usage over multiple usage sessions.
+The goal of the study is to understand and support an interleaved workflow in
+collaborative information analysis by evaluating tool usage in a natural
+environment over multiple usage sessions. Our work responds to calls for an
+integrated environment made in the intelligence community as well as other data
+intensive domains \cite{Shah2014i, Chen2016, Vision2015, Amershi2015, Ware2012}.
+The system builds upon prior empirical studies (e.g. \cite{Carroll2013,
+Borge2012,Kang2011,Chin2009}) and embodies their design implications in our
+tool. The study also complements research that only tests tools in short term
+lab studies (e.g. \cite{Convertino2011,Goyal2016,Hajizadeh2013}) by
+investigating tool usage over multiple usage sessions.
 
-This study adopts an \emph{analyst-centered design} approach. A critical requirement of developing tools that meet user needs is to
-understand their needs and practices. When these needs and practices
-are specialized (as is the case in intelligence analysis), it is
-particularly important to include the target user population in
-the design process \cite{Scholtz2014}.
-Our classroom study provided an opportunity with deep
-access to analysts in training. These analysts have been trained
-with knowledge and skills of intelligence analysis, and have experience with state-of-the-art analytic
-tools such as Analyst's Notebook and PARC ACH. In their reflections, participants often compared CAnalytics to
-those tools. Their multi-session usage of CAnalytics also allows them to adapt to the tool and learn to appropriate it to the best of their team purpose \cite{Stahl2006}. Therefore, while their feedback is
-admittedly not the same as an experienced professional,
-their feedback does provide a deeper insight into strengths and
-weaknesses of CAnalytics.
+This study adopts an \emph{analyst-centered design} approach. A critical
+requirement of developing tools that meet user needs is to understand their
+needs and practices. When these needs and practices are specialized (as is the
+case in intelligence analysis), it is particularly important to include the
+target user population in the design process \cite{Scholtz2014}. Our classroom
+study provided an opportunity with deep access to analysts in training. These
+analysts have been trained with knowledge and skills of intelligence analysis,
+and have experience with state-of-the-art analytic tools such as Analyst's
+Notebook and PARC ACH. In their reflections, participants often compared
+CAnalytics to those tools. Their multi-session usage of CAnalytics also allows
+them to adapt to the tool and learn to appropriate it to the best of their team
+purpose \cite{Stahl2006}. Therefore, while their feedback is admittedly not the
+same as an experienced professional, their feedback does provide a deeper
+insight into strengths and weaknesses of CAnalytics.
 
-The study provides encouraging results on supporting collaboration in
-intelligence analysis. Participants appreciated an all-in-one environment where
-they could share raw documents, evidence snippets, views of evidence and
-hypotheses in one place. They liked the fact that they could contribute
-simultaneously without blocking or interfering each other. Another benefit of
-the collaborative tool is to keep teammates aware of each other's activities.
-Staying aware of teammates not only helps establish a common ground for planning
-team strategy, but also ensure everyone is following the plan as expected.
-Moreover, results suggest the awareness features provide positive \emph{social
-facilitation} \cite{Zajonc1965}: individuals found the task motivating and
-engaging with awareness of each other's activity. We also measured collaboration
-characteristics that impacted team performance, and found that balanced
-contribution, peer editing, and earlier switching from modeling to analysis
-predicted higher team performance. Most importantly, we documented the interleaving workflow enabled by the integrated environment, and explored momentum in modeling and analysis behaviors that drove the activity switching. Below we discuss design implications that could potentially enable a better collaborative experience in information analysis tasks.
+The study provides encouraging results. Participants appreciated an all-in-one
+environment where they could share raw documents, evidence snippets, views of
+evidence and hypotheses in one place. They liked the fact that they could
+contribute simultaneously without blocking or interfering each other. Another
+benefit of the collaborative tool is to keep teammates aware of each other's
+activities. Staying aware of teammates not only helps establish a common ground
+for planning team strategy, but also ensure everyone is following the plan as
+expected. Moreover, results suggest the awareness features provide positive
+\emph{social facilitation} \cite{Zajonc1965}: individuals found the task
+motivating and engaging with awareness of each other's activity. We also
+measured collaboration characteristics that impacted team performance, and found
+that balanced contribution, peer editing, and earlier switching from modeling to
+analysis predicted higher team performance. Most importantly, we documented the
+interleaved workflow enabled by the integrated environment, and explored
+momentum in modeling and analysis behaviors that drove the activity switching.
+Below we discuss design implications that could potentially enable a better
+collaborative experience in information analysis tasks.
 
-\paragraph{Scaffold a structured interleaving workflow}
+\paragraph{Scaffold a structured interleaved workflow}
 
 A misconception about information analysis is that data modeling and
 data analysis are two staged activities. This is akin to the \emph{waterfall}
@@ -55,26 +61,26 @@ trained with tools that impose a waterfall model. They could have followed their
 old waterfall practice with our tool, yet instead all teams spontaneously
 switched to an iterative manner. We projected that modeling on multiple granularities drives analysis on different levels, and uncertainty in analysis pushes analysts back to collecting additional data.
 
-Realizing that, we probably could shape analysts into a more interleaving
+Realizing that, we probably could shape analysts into a more interleaved
 workflow with a more structured approach. Structured techniques help users
 perform analysis in a systematic and transparent manner. For example, IEW aims
 to structure evidence modeling, and ACH proceduralizes evaluation of analytic
 hypotheses. Yet the way to switch between the two activities is loosely defined
 \cite{Kang2011}. Our system implies a structured modeling through annotation and
-a structured analysis by visualizing data in multiple views, and by sharing the
-data structure we enable a smooth switching between the two stages. Our result
-implies the role of multilevel modeling and analysis uncertainty in driving the
-switch. Based on that, we could build a scaffolding process to assist analysts
-in connecting data and analysis to enable a more interleaving flow. For example,
-when user adds a new data object, the system could suggest possible connections
-to existing evidence in the context of an appropriate level of views, which is
-likely to help analysts discover new patterns. When a user creates a new
-hypothesis with uncertainty, the system could highlight associated evidence,
-which would prompt the analyst to re-examine the data and look for more data.
-Such scaffolding provides a basic structure to link stages of analytic
-activities that analysts can take on without imposing a specific fixed workflow.
+a structured analysis by visualizing data in multiple views. By sharing the same
+data structure and consistent user interface, we enable a smooth switching
+between the two stages. Our result implies the role of multilevel modeling and
+analysis uncertainty in driving the switch. Based on that, there exist design
+opportunities to enable a more interleaved flow. For example, we can build a more structured scaffolding process to bridge modeling and analysis. When user adds a
+new data object, the system could suggest possible connections to existing
+evidence in the context of an appropriate level of views, which is likely to
+help analysts discover new patterns. When a user creates a new hypothesis with
+uncertainty, the system could highlight associated evidence, which would prompt
+the analyst to re-examine the data and look for more data. Such scaffolding
+provides a basic structure to link stages of analytic activities that analysts
+can take on without imposing a specific fixed workflow.
 
-A smoothier interleaving workflow could also be made by increasing team
+A smoothier interleaved workflow could also be made by increasing team
 awareness of partner's modeling and analysis. That is, uncertainty in one's
 analysis not only motivates oneself to data modeling, but also drives partners
 (who is aware of the what and why of the uncertainty) to collect more data.
@@ -90,7 +96,7 @@ detail in the following paragraphs.
 
 \paragraph{Build collapsible views for multi-level modeling}
 
-We observed that analysts built data models in multiple granularities and  engaged and coordinated among different levels of details. For example, analysts jumped
+We observed that analysts built data models in multiple granularities and engaged and coordinated among different levels of details. For example, analysts jumped
 quickly from digging into details of a single event, to comparing between two
 events, and to overviewing all robberies as a complete story. When sharing these data, a critical requirement is to represent them in an appropriate context in order to ensure teammates understand them correctly. A collapsible data view could be a solution to accommodate such
 multi-level modeling. This can help draw teammate's attention to a specific item
