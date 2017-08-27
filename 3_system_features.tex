@@ -1,18 +1,25 @@
 \section{CAnalytics Features}\label{canalytics-features}
 
 
+% place system figure here simply for paper layout
+\begin{figure*}
+	\centering
+	\includegraphics[width=\columnwidth]{./img/interface.png}
+	\caption{CAnalytics user interface. Each window is closable, movable, and resizable. Shown here are \emph{document} view (top left), timeline (bottom left), network (top right), map (bottom middle), and message (bottom right). Other windows include table, notepad, and history view. }\label{fig:canalytics}
+\end{figure*}
+
 %\bvh{I think that the biggest thing missing from here is an argument about *why* they tool has been built the way it is. This should really link up to the arguments that you made in the abstract/intro about dynamism and collaboration more explicitly.}
 
 As shown in Figure~\ref{fig:canalytics}, we developed a web application tool, \emph{CAnalytics} (standing for ``C-ollaborative Analytics''), to
 support teams of analysts in identifying, visualizing, integrating and
-assessing facts from multiple sources. Two particular design objectives are 1) to build an integrated environment for intelligence analysis, and 2) to support collaboration with shared data and awareness functions. The design is informed by earlier
+assessing facts from multiple sources. Two particular design objectives are 1) to build an integrated environment for data modeling and analysis, and 2) to support collaboration with shared data and awareness functions. The design is informed by earlier
 paper prototype studies \cite{Borge2012, Carroll2013}, in which the researchers examined team's communication patterns and
 spontaneously created artifacts in a crime scenario. We also take into account findings from
 empirical studies conducted by Chin et al. \cite{Chin2009} and Kang
 and Stasko \cite{Kang2011} when making design decisions.
 %\bvh{I would mention the reasons why we built it again here as an organizing structure for introducing the features and how they relate to those two overriding goals of dynamism and collaboration - modified}
 
-\paragraph{Coordinated multiple views for data modeling and analysis}
+\subsection{Coordinated multiple views for data modeling and analysis}
 
 To enable an integrated environment for different functionalities of analysis, CAnalytics employs a multiple-view interface, with each view in a floating, closable window. Views are coordinated and share the underlying data pool so that products of different activities are not fragmented. The following paragraphs describe features of each view.
 
@@ -26,9 +33,9 @@ annotation allows for greater user control in terms of
 information of interest and granularity that best suits their ad-hoc
 analytic needs.
 %\bvh{I wouldn't make too big of a point out of not supporting automated analysis, I would instead put it as something to look at in future work. You are sort of calling out a whole couple of fields in this set of statements. - modified}
-Users can add attributes to the annotated object, e.g.~time in an event, and coordinate in a location. Users can
+Users can add attributes to the annotated object, e.g.~time in an event, and geo-coordination in a location. We can
 also make reference to other objects in the attribute; for example,
-users can add people objects to an event indicating that these people
+adding people objects to an event indicating that these people
 were involved in the event.
 %\bvh{I almost think this is too fine grained of a description...you could just take the first sentence or two of this and add it to the previous paragraph. -deleted some}
 
@@ -53,7 +60,7 @@ entities to their interest by: specifying a time range using the functionality p
 with map filter; or selecting a cluster of entities by drawing a bounding
 area in the network view.
 
-\paragraph{Collaboration and awareness features}
+\subsection{Collaboration and awareness features}
 
 To support collaboration, CAnalytics affords real-time collaborative editing, similar to 
 Google Tools. Users can open several concurrent editors to

@@ -44,7 +44,7 @@ momentum in modeling and analysis behaviors that drove the activity switching.
 Below we discuss design implications that could potentially enable a better
 collaborative experience in information analysis tasks.
 
-\paragraph{Scaffold a structured interleaved workflow}
+\subsection{Scaffold a structured interleaved workflow}
 
 A misconception about information analysis is that data modeling and
 data analysis are two staged activities. This is akin to the \emph{waterfall}
@@ -55,17 +55,15 @@ argued against this approach and instead called for an iterative design
 process that leads to reframe user requirements,
 redesign, redevelopment, and retesting.
 
-Our result demonstrates a similar iterative and dynamic process in intelligence
+Our result demonstrates a similar iterative and dynamic process in information
 analysis. The result is striking especially because our participants have been
 trained with tools that impose a waterfall model. They could have followed their
 old waterfall practice with our tool, yet instead all teams spontaneously
 switched to an iterative manner. We projected that modeling on multiple granularities drives analysis on different levels, and uncertainty in analysis pushes analysts back to collecting additional data.
 
 Realizing that, we probably could shape analysts into a more interleaved
-workflow with a more structured approach. Structured techniques help users
-perform analysis in a systematic and transparent manner. For example, IEW aims
-to structure evidence modeling, and ACH proceduralizes evaluation of analytic
-hypotheses. Yet the way to switch between the two activities is loosely defined
+workflow with a more structured approach. Structured techniques such as IEW and ACH  help users
+perform analysis in a systematic and transparent manner in each well defined activity, yet fall short in guiding analysts in switching between the two activities
 \cite{Kang2011}. Our system implies a structured modeling through annotation and
 a structured analysis by visualizing data in multiple views. By sharing the same
 data structure and consistent user interface, we enable a smooth switching
@@ -94,7 +92,7 @@ team awareness of these features opens up possibilities for coordinating
 interleaving at the team level. We discuss these design implications in further
 detail in the following paragraphs.
 
-\paragraph{Build collapsible views for multi-level modeling}
+\subsection{Build collapsible views for multi-level modeling}
 
 We observed that analysts built data models in multiple granularities and engaged and coordinated among different levels of details. For example, analysts jumped
 quickly from digging into details of a single event, to comparing between two
@@ -108,7 +106,7 @@ details (e.g.~representing suspect's all actions to identify patterns of common
 actions in two robberies). An analyst can overview all robberies and only unfold
 detailed actions when investigating into a specific robbery.
 
-\paragraph{Design a richer graphic language for uncertainty}
+\subsection{Design a richer graphic language for uncertainty}
 
 Uncertainty is prevalent in analysis and more prevalent in collaborative
 analysis because each teammate becomes a source of uncertainty when they
@@ -126,7 +124,7 @@ different transparency. Users can \emph{filter} by uncertainty so that users can
 choose to consider evidence only with high credibility, or to review all
 inferences and decide what extra data is needed to consolidate them.
 
-\paragraph{Share views as team resource}
+\subsection{Share views as team resource}
 
 View sharing is important for sharing and understanding analytic result
 \cite{Morton2014a}. A common solution is to enable a public view which always
@@ -142,7 +140,7 @@ all interactions including filtering and highlighting, and are able to evolve
 the view with collective team efforts, a critical requirement emphasized in
 \cite{Carroll2013}.
 
-\paragraph{Distinguish visible vs. valuable contributions}
+\subsection{Distinguish visible vs. valuable contributions}
 
 Finally, we noted cases where teams created far more entities than needed with an
 accretion strategy. Strikingly, while similar data modeling strategy was

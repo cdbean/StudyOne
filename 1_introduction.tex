@@ -2,12 +2,12 @@
 
 Collaborative information analysis is a form of sensemaking wherein a team of analysts
 identify and evaluate causal relationships in a complex corpus of documents. A
-common example of such an analysis is \emph{intelligence analysis}, where a variety of putative facts are assembled, e.g.
+common example of such an analysis is \emph{Intelligence Analysis}, where a variety of putative facts are assembled, e.g.
 financial records, witness observations and interviews, and the social
 connections between persons of interest. Armed with these different assembled facts
  investigators collaboratively: assess means, motives,
 and opportunities; articulate and investigate further hypotheses and deductions;
-and develop one or more theories of the crime. Other examples include business intelligence, scientific research, social constructivist learning, etc.
+and develop one or more theories of the crime. Other examples include business intelligence, scientific research, collaborative learning, etc.
 
 %\bvh{Outline the critical challenge of modeling data and basing hypotheses on
 % it. Current tooling forces you into waterfall.} \bvh{I would say the waterfall
@@ -19,10 +19,8 @@ data models in various information artifacts, and developing them into
 hypotheses.  Systems that currently support information analysis are aimed at a
 single phase and therefore only support part of the overall analysis workflow.
 This imposes a clear boundary between each of these phases on the analysts. For
-example, Analysis of Competing Hypotheses (ACH) assumes
-that data has been modeled, and that relevant evidence can be adduced
-appropriately to various hypotheses, but provides no structured support for
-either. Other techniques, such as Information Extraction and Weighting (IEW),
+example, visualization techniques are frequently employed to help reveal patterns behind complex data. But they often assume
+that data has been modeled, or that no additional data is needed, but neither is true in information analysis, which requires dynamic data modeling and analysis depending on the ad-hoc hypotheses. In contrast, data modeling techniques, such as Information Extraction and Weighting (IEW),
 help structure evidence modeling, but do not extend utilization of evidence to
 hypothesis generation. The unintended boundary between phases has the
 consequence that data modeled in one software cannot be effectively utilized in
@@ -41,27 +39,28 @@ puts great value on collaboration. A report from the Director of National
 Intelligence, \emph{Vision 2015},  called for \emph{``a dramatic shift from
 traditional emphasis on self-reliance toward more collaborative operations''}
 \cite[p.13]{Vision2015}. However, most analytic tools that are widely used in
-the intelligence community (e.g.~Analyst's Notebook \cite{IBM} and PARC ACH
-\cite{PARC}) do not support collaboration. The community has to rely on separate
-collaboration tools (e.g.~email, Intellipedia \cite{Intelink2017}), which lack
-serious support for analytics or for team coordination \cite{Treverton2016}. Thus,
-analysts must coordinate their work outside of their tool support, manually
-sharing their analytic products.
+the community (e.g.~Analyst's Notebook \cite{IBM} and PARC ACH
+\cite{PARC}) do not support collaboration. Separate
+collaboration tools (e.g.~email, Intellipedia \cite{Intelink2017}) are adopted, which yet lack
+serious support for data analytics \cite{Treverton2016}. Thus,
+analysts must coordinate their work outside of their analytic tools, and manually
+share their analytic products. This study aims to investigate design opportunities to enable a collaborative workflow within an analytic workspace.
 
-Supporting collaboration in information analysis is challenging, and perhaps
-more than in other situations (e.g.~collaborative writing, wiki) because of the
-dynamic nature of the task. A team could be working with much more complex data
-structure (e.g.~spatial data, temporal data, and relational data, as opposed to
-text only), coordinating through multiple analytic artifacts
-(e.g.~visualizations as opposed to document only), and making sense of different
-levels of analysis, assumptions, and hypotheses, and iterate over these
-activities throughout a long-term course of collaborative interaction. Thus
-support for collaboration in teams goes beyond general coordination of plans and
-meetings, and must be seamlessly integrated with analytic support. This study
-aims to investigate design opportunities to better mediate team analysis.
+%Supporting collaboration in information analysis is challenging, and perhaps
+%more than in other situations (e.g.~collaborative writing, wiki) because of the
+%dynamic nature of the task. A team could be working with much more complex data
+%structure (e.g.~spatial data, temporal data, and relational data, as opposed to
+%text only), coordinating through multiple analytic artifacts
+%(e.g.~visualizations as opposed to document only), and making sense of different
+%levels of analysis, assumptions, and hypotheses, and iterate over these
+%activities throughout a long-term course of collaborative interaction. Thus
+%support for collaboration in teams goes beyond general coordination of plans and
+%meetings, and must be seamlessly integrated with analytic support. This study
+%aims to investigate design opportunities to better mediate team analysis.
 
 %\bvh{Talk about what we did, this makes sense.}
-This paper reports specifically on a collaborative information analysis task
+
+We have developed an interactive visualization tool to integrate dynamic data modeling, visual analysis, and team collaboration. This paper reports evaluation of the tool specifically on a collaborative information analysis task
 situated in the intelligence domain, one of the most complex information
 analysis areas. We performed our study in an intelligence analysis course. A
 classroom study provides a natural environment in which participants engage in
@@ -76,10 +75,6 @@ important parts of the future intelligence community. In some sense, their
 practice can be treated as a view into the future of practice of the community
 \cite{Martin2014}.
 
-We have developed a tool that includes annotation for data modeling, interactive
-visualization for data analysis, and collaboration features. While this paper
-reports a collaborative task in a specific domain, findings regarding team
-process and breakdowns meet the interest of the broader CSCW community.
 Contributions of this study include: 1) we documented a spontaneously adopted
 interleaved workflow involving switching between modeling and analysis; 2) we
 explored what supported such interleaving and what further design opportunities
